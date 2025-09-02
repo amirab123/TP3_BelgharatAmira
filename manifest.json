@@ -1,0 +1,21 @@
+{
+  "name": "Québec Aventure Camping",
+  "short_name": "Québec Aventure Camping ",
+  "description": "Application web de Québec Aventure Camping",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#706C61",
+  "icons": [
+    {
+      "src": "img/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/traveler.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
