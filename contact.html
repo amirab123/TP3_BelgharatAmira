@@ -100,81 +100,88 @@
     </p>
 
     <form action="#" method="POST" class="grid grid-cols-12 gap-6 bg-green-600 p-8 rounded-xl shadow-lg" novalidate>
-
+  
   <!-- Nom -->
   <div class="col-span-12 md:col-span-6">
-    <label for="nom" class="mb-2 text-sm font-semibold">Nom <span class="text-red-500">*</span></label>
+    <label for="nom" class="mb-2 text-sm font-semibold">
+      Nom <span class="text-red-500">*</span>
+    </label>
     <input type="text" id="nom" name="nom" required
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-    <span class="text-red-500 text-sm hidden" id="error-nom"></span>
   </div>
 
   <!-- Prénom -->
   <div class="col-span-12 md:col-span-6">
-    <label for="prenom" class="mb-2 text-sm font-semibold">Prénom <span class="text-red-500">*</span></label>
+    <label for="prenom" class="mb-2 text-sm font-semibold">
+      Prénom <span class="text-red-500">*</span>
+    </label>
     <input type="text" id="prenom" name="prenom" required
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-    <span class="text-red-500 text-sm hidden" id="error-prenom"></span>
   </div>
 
   <!-- Email -->
   <div class="col-span-12 md:col-span-6">
-    <label for="email" class="mb-2 text-sm font-semibold">Email <span class="text-red-500">*</span></label>
+    <label for="email" class="mb-2 text-sm font-semibold">
+      Email <span class="text-red-500">*</span>
+    </label>
     <input type="email" id="email" name="email" required
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-    <span class="text-red-500 text-sm hidden" id="error-email"></span>
   </div>
 
   <!-- Téléphone -->
   <div class="col-span-12 md:col-span-6">
-    <label for="telephone" class="mb-2 text-sm font-semibold">Téléphone <span class="text-red-500">*</span></label>
+    <label for="telephone" class="mb-2 text-sm font-semibold">
+      Téléphone <span class="text-red-500">*</span>
+    </label>
     <input type="tel" id="telephone" name="telephone" required
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-    <span class="text-red-500 text-sm hidden" id="error-telephone"></span>
   </div>
 
   <!-- Code postal -->
   <div class="col-span-12 md:col-span-4">
-    <label for="code_postal" class="mb-2 text-sm font-semibold">Code postal <span class="text-red-500">*</span></label>
+    <label for="code_postal" class="mb-2 text-sm font-semibold">
+      Code postal <span class="text-red-500">*</span>
+    </label>
     <input type="text" id="code_postal" name="code_postal" required
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-    <span class="text-red-500 text-sm hidden" id="error-code_postal"></span>
   </div>
 
   <!-- Adresse -->
   <div class="col-span-12 md:col-span-8">
-    <label for="adresse" class="mb-2 text-sm font-semibold">Adresse <span class="text-red-500">*</span></label>
+    <label for="adresse" class="mb-2 text-sm font-semibold">
+      Adresse <span class="text-red-500">*</span>
+    </label>
     <input type="text" id="adresse" name="adresse" required
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-    <span class="text-red-500 text-sm hidden" id="error-adresse"></span>
   </div>
 
   <!-- Sujet -->
   <div class="col-span-12">
-    <label for="sujet" class="mb-2 text-sm font-semibold">Sujet <span class="text-red-500">*</span></label>
+    <label for="sujet" class="mb-2 text-sm font-semibold">
+      Sujet <span class="text-red-500">*</span>
+    </label>
     <input type="text" id="sujet" name="sujet" required
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-    <span class="text-red-500 text-sm hidden" id="error-sujet"></span>
   </div>
 
   <!-- Message -->
   <div class="col-span-12">
-    <label for="message" class="mb-2 text-sm font-semibold">Message <span class="text-red-500">*</span></label>
+    <label for="message" class="mb-2 text-sm font-semibold">
+      Message <span class="text-red-500">*</span>
+    </label>
     <textarea id="message" name="message" rows="5" required
               class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
-    <span class="text-red-500 text-sm hidden" id="error-message"></span>
   </div>
 
   <!-- Bouton -->
   <div class="col-span-12 text-center">
-    <button type="submit"
+    <button type="submit" 
             class="px-6 py-3 bg-green-500 text-white font-bold rounded-full hover:bg-orange-600 transition">
       Envoyer le message
     </button>
   </div>
 
 </form>
-
 
       </div>
 
@@ -186,6 +193,159 @@
         </iframe>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="py-16 bg-green-100">
+  <h2 class="text-center text-orange-400 text-3xl mb-12">Témoignages</h2>
+
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-12 gap-8">
+
+ 
+    <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-green-700 text-gray-400 p-8 rounded-md shadow-sm testimonial-card">
+      <div class="grid grid-cols-12 gap-2 mb-4">
+        <div class="col-span-12 grid grid-cols-5 gap-1 text-yellow-400">
+          <!-- 5 étoiles -->
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+        </div>
+      </div>
+      <p class="col-span-12 text-base mb-6 text-white">J’ai participé à un circuit de Québec Aventure Camping et c’était incroyable ! Les guides sont professionnels et passionnés, et chaque étape est parfaitement organisée.</p>
+      <div class="col-span-12 grid grid-cols-12 gap-4 items-center">
+        <div class="col-span-2">
+          <img src="img/userfemme.jpg" alt="Marie Tremblay" class="rounded-full w-full h-full object-cover">
+        </div>
+        <div class="col-span-10">
+          <p class="text-white font-bold">Marie Tremblay</p>
+          <p class="text-xs text-white">Voyageuse passionnée</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-green-700 text-gray-400 p-8 rounded-md shadow-sm testimonial-card">
+      <div class="grid grid-cols-12 gap-2 mb-4">
+        <div class="col-span-12 grid grid-cols-5 gap-1 text-yellow-400">
+          <!-- 5 étoiles -->
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+        </div>
+      </div>
+      <p class="col-span-12 text-base mb-6 text-white">Les paysages du Québec sont magnifiques ! Ce circuit d’aventure m’a permis de me reconnecter avec la nature et de profiter de moments uniques.</p>
+      <div class="col-span-12 grid grid-cols-12 gap-4 items-center">
+        <div class="col-span-2">
+          <img src="img/men.jpg" alt="Julien Lefebvre" class="rounded-full w-full h-full object-cover">
+        </div>
+        <div class="col-span-10">
+          <p class="text-white font-bold">Julien Lefebvre</p>
+          <p class="text-xs text-white">Explorateur amateur</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Témoignage 3 -->
+    <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-green-700 text-gray-400 p-8 rounded-md shadow-sm testimonial-card">
+      <div class="grid grid-cols-12 gap-2 mb-4">
+        <div class="col-span-12 grid grid-cols-5 gap-1 text-yellow-400">
+          <!-- 5 étoiles -->
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+        </div>
+      </div>
+      <p class="col-span-12 text-base mb-6 text-white">Une aventure familiale parfaite ! Les activités sont variées et adaptées à tous les âges. On s’est vraiment senti en sécurité tout le long du circuit.</p>
+      <div class="col-span-12 grid grid-cols-12 gap-4 items-center">
+        <div class="col-span-2">
+          <img src="img/men.jpg" alt="Marc Dubois" class="rounded-full w-full h-full object-cover">
+        </div>
+        <div class="col-span-10">
+          <p class="text-white font-bold">Marc Dubois</p>
+          <p class="text-xs text-white">Père de famille</p>
+        </div>
+      </div>
+    </div>
+
+<!-- Témoignage 2 -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 bg-green-700 text-gray-400 p-8 rounded-md shadow-sm testimonial-card">
+  <div class="grid grid-cols-12 gap-2 mb-4">
+    <div class="col-span-12 grid grid-cols-5 gap-1 text-yellow-400">
+      <!-- 5 étoiles -->
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+    </div>
+  </div>
+  <p class="col-span-12 text-base mb-6 text-white">Les paysages du Québec sont époustouflants ! J’ai adorée ce circuit qui combine aventure et détente. Les guides sont très attentifs et chaleureux.</p>
+  <div class="col-span-12 grid grid-cols-12 gap-4 items-center">
+    <div class="col-span-2">
+      <img src="img/userfemme.jpg" alt="sarah " class="rounded-full w-full h-full object-cover">
+    </div>
+    <div class="col-span-10">
+      <p class="text-white font-bold">sarah</p>
+      <p class="text-xs text-white">Explorateur</p>
+    </div>
+  </div>
+</div>
+
+<!-- Témoignage 3 -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 bg-green-700 text-gray-400 p-8 rounded-md shadow-sm testimonial-card">
+  <div class="grid grid-cols-12 gap-2 mb-4">
+    <div class="col-span-12 grid grid-cols-5 gap-1 text-yellow-400">
+      <!-- 5 étoiles -->
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+    </div>
+  </div>
+  <p class="col-span-12 text-base mb-6 text-white">Expérience incroyable ! Les activités étaient variées et adaptées à tous. La nature du Québec n’a jamais été aussi belle et accessible.</p>
+  <div class="col-span-12 grid grid-cols-12 gap-4 items-center">
+    <div class="col-span-2">
+      <img src="img/userfemme.jpg" alt="Sophie Caron" class="rounded-full w-full h-full object-cover">
+    </div>
+    <div class="col-span-10">
+      <p class="text-white font-bold">Sophie Caron</p>
+      <p class="text-xs text-white">Aventurière</p>
+    </div>
+  </div>
+</div>
+
+<!-- Témoignage 4 -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 bg-green-700 text-gray-400 p-8 rounded-md shadow-sm testimonial-card">
+  <div class="grid grid-cols-12 gap-2 mb-4">
+    <div class="col-span-12 grid grid-cols-5 gap-1 text-yellow-400">
+      <!-- 5 étoiles -->
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.867 6.9-1 3.086-6.253 3.086 6.253 6.9 1-5 4.867 1.179 6.873z"/></svg>
+    </div>
+  </div>
+  <p class="col-span-12 text-base mb-6 text-white">Nous avons adoré le mélange d’aventure et de confort. Les activités étaient sécurisées et amusantes pour toute la famille !</p>
+  <div class="col-span-12 grid grid-cols-12 gap-4 items-center">
+    <div class="col-span-2">
+      <img src="img/image.png" alt="Marc Dubois" class="rounded-full w-full h-full object-cover">
+    </div>
+    <div class="col-span-10">
+      <p class="text-white  font-bold">Marc Dubois</p>
+      <p class="text-xs text-white">Père de famille</p>
+    </div>
+  </div>
+</div>
+
+
   </div>
 </section>
 

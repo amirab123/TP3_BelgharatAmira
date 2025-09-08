@@ -76,3 +76,29 @@
 
 
 
+
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.testimonial-card {
+  animation: float $transition-duration $transition-ease infinite;
+  
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.3s * $i;
+    }
+  }
+}
