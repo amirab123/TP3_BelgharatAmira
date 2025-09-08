@@ -1,7 +1,7 @@
 {
-  "name": "Québec Aventure Camping",
-  "short_name": "Québec Aventure Camping ",
-  "description": "Application web de Québec Aventure Camping",
+  "name": "Circuits d’aventure Québec",
+  "short_name": "Circuits d’aventure Québec ",
+  "description": "Application web  Circuits d’aventure Québec",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
