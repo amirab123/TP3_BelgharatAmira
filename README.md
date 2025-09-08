@@ -17,7 +17,11 @@ HTML, CSS, JavaScript
 Tailwind CSS pour le design responsive
 
 SASS pour la gestion du style
+### page index
+utilisation du composant card Flowbite : ajout du lien https://flowbite.com/docs/components/card/
 
+
+  ### Section Destination :                                      :  https://tw-elements.com/docs/standard/components/cards/
 
 ### Section Témoignages
 #page propros.html
