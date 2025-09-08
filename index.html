@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Québec Aventure Camping</title>
-     <meta name="description" content="Québec Aventure Camping">
+    <title>Circuits d’aventure Québec</title>
+     <meta name="description" content="Circuits d’aventure Québec">
   <script src="https://cdn.tailwindcss.com"></script>
 
 
@@ -15,54 +15,275 @@
 
 </head>
 
-<body class="bg-cyan-800 text-white font-sans">
-    <header class="flex justify-between items-center px-8 py-4 bg-cyan-950">
-   <div class="logo text-2xl font-bold">Québec Aventure Camping</div>
-    <nav>
-      <ul class="flex space-x-6">
-        <li><a href="index.html" class="hover:text-orange-400">Accueil</a></li>
-    
-        <li><a href="propos.html" class="hover:text-orange-400">À propos</a></li>
-            <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
-      </ul>
-    </nav>
+<body class="bg-cyan-950 text-white font-sans">
+  <header class="grid grid-cols-12 items-center px-8 py-4 header">
 
-    </header>
+  <div class="col-span-6 text-2xl font-bold">
+    Circuits d’aventure Québec
+  </div>
+
+
+  <nav class="col-span-6">
+    <ul class="flex justify-end space-x-6">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="propos.html" class="nav-link">À propos</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
     <main>
 
- <section 
-  class="relative h-[80vh] grid grid-cols-12 bg-cover bg-center bg-[url('img/camping.jpg')]"
->
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black/50"></div>
-
+<section class="hero relative h-[80vh] grid grid-cols-12">
   <!-- Contenu -->
-  <div class="relative z-10 col-span-6 col-start-4 flex flex-col items-center justify-center text-center text-white px-6">
+  <div class="hero__content col-span-6 col-start-4 text-center text-white self-center">
     <h3 class="text-lg uppercase tracking-widest">Agence de Voyage</h3>
-    <h1 class="text-4xl md:text-6xl font-bold my-4">Circuits d’aventure</h1>
-    <p class="max-w-xl text-gray-200">
+    <h1 class="text-4xl md:text-6xl font-bold my-4 animate-fade-up">Circuits d’aventure Québec</h1>
+    <p class="max-w-xl mx-auto">
       Découvrez nos circuits uniques à travers le Québec et ailleurs 🌍
     </p>
-    <a 
-      href="#" 
-      class="mt-6 px-6 py-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition"
-    >
-      En savoir plus
-    </a>
+    <a href="#" class="btn">En savoir plus</a>
   </div>
 </section>
 
-<section>
 
+
+<section class="py-16 bg-cyan-500">
+  <h2 class="text-3xl font-bold text-center mb-12 text-white">Nos services</h2>
+  <div class="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+    
+    <div class="card bg-cyan-700 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+      <div class="card__icon text-orange-500 text-4xl mb-4">🗻</div>
+      <h3 class="card__title text-xl font-semibold mb-2">Aventures en montagne</h3>
+      <p class="text-gray-300">Partez à la découverte des montagnes du Québec et vivez des expériences inoubliables en pleine nature.</p>
+    </div>
+    
+    <div class="card bg-cyan-500 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+      <div class="card__icon text-orange-500 text-4xl mb-4">🏕️</div>
+      <h3 class="card__title text-xl font-semibold mb-2">Campings familiaux</h3>
+      <p class="text-gray-300">Séjours adaptés à toute la famille avec tentes, chalets et activités pour petits et grands.</p>
+    </div>
+    
+    <div class="card bg-cyan-500 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+      <div class="card__icon text-orange-500 text-4xl mb-4">🚣</div>
+      <h3 class="card__title text-xl font-semibold mb-2">Sports et aventures</h3>
+      <p class="text-gray-300">Kayak, randonnée et activités plein air pour les amateurs de sensations fortes et de nature.</p>
+    </div>
+    
+    <div class="card bg-cyan-500 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+      <div class="card__icon text-orange-500 text-4xl mb-4">🔥</div>
+      <h3 class="card__title text-xl font-semibold mb-2">Soirées autour du feu</h3>
+      <p class="text-gray-300">Profitez de moments conviviaux au camping avec feux de camp, histoires et détente sous les étoiles.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="destinations py-16  ">
+  <h2 class="text-3xl font-bold text-center mb-12">Nos destinations</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="destination  rounded-lg shadow-lg overflow-hidden">
+      <img src="img/montremblant.jpg" alt="Mont-Tremblant" class="w-full h-48 object-cover">
+
+    
+        <h3 class="text-xl font-semibold">Mont-Tremblant</h3>
+        <p class="p-4 text-gray-700">Découvrez les paysages époustouflants et les activités de plein air à Mont-Tremblant, une destination prisée pour les amateurs de nature et d'aventure.</p>
+
+      </div>
+  
+    <div class="destination  rounded-lg shadow-lg overflow-hidden">
+      <img src="img/gaspesie.jpg" alt="Parc national de la
+  Gaspésie" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Parc national de la Gaspésie</h3>
+        <p class="p-4 text-gray-700">Explorez les montagnes majestueuses et la faune diversifiée du Parc national de la Gaspésie, un paradis pour les randonneurs et les amoureux de la nature.</p>
+      </div>
+    </div>
+    <div class="destination  rounded-lg shadow-lg overflow-hidden">
+      <img src="img/Charlevoix.jpeg" alt="Charlevoix" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Charlevoix</h3>
+        <p class="p-4 text-gray-700">Découvrez la beauté naturelle et la culture riche de Charlevoix, une région reconnue pour ses paysages à couper le souffle et ses activités de plein air.</p>
+      </div>
+    </div>
+
+
+
+  
+ 
+  </div>
+</section>
+
+<section class="py-20 bg-green-50">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center md:justify-between gap-8">
+    
+    <!-- Texte -->
+      <div class="md:w-1/2 flex justify-center">
+      <img src="img/sac.jpg" alt="Voyage sac à dos" class="w-64 h-64 rounded-full object-cover shadow-lg">
+    </div>
+
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight">
+        Voyages sac à dos
+      </h2>
+      <p class="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
+        Partez à l’aventure en toute liberté. Choisissez votre destination et préparez votre sac à dos pour découvrir des lieux authentiques, rencontrer des gens passionnants et vivre des expériences inoubliables.  
+        Profitez de la nature, des randonnées et des paysages à couper le souffle.
+      </p>
+    </div>
+
+
+
+
+  </div>
 </section>
 
 
-     
-    </main>
-    <footer>
-        <p>© 2025  Québec Aventure Camping. Tous droits réservés.</p>
-    </footer>   
 
+<section id="sejours-nature" class="py-16 bg-cyan-500">
+  <div class="max-w-6xl mx-auto px-4">
+ 
+    <div class="text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+        Séjours en nature
+      </h2>
+      <p class="mt-4 text-white text-lg">
+        Les plus belles escapades sont souvent les plus simples. Faites votre choix d'hébergement et partez à la découverte de véritables coins de paradis. Des destinations où il fait bon se rassembler, décrocher au grand air et faire une foule d’activités.
+      </p>
+    </div>
+
+    <!-- Cartes -->
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Camping -->
+      <article class="group relative overflow-hidden rounded-2xl shadow bg-white">
+        <img src="img/camping.jpg" alt="Camping en pleine nature" class="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-orange-400">Camping</h3>
+          <p class="mt-2 text-gray-600">Nuits sous les étoiles, feux de camp et sentiers à proximité.</p>
+          <a href="camping.html" class="mt-4 inline-flex items-center gap-2 font-medium text-blue-600 hover:underline">
+            Découvrir
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Chalets -->
+      <article class="group relative overflow-hidden rounded-2xl shadow bg-white">
+        <img src="img/chalet.jpg" alt="Chalet en bois près d'un lac" class="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-orange-400">Chalets</h3>
+          <p class="mt-2 text-gray-600">Confort, intimité et vues imprenables pour décrocher vraiment.</p>
+          <a href="chalets.html" class="mt-4 inline-flex items-center gap-2 font-medium text-blue-600 hover:underline">
+            Découvrir
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Auberges -->
+      <article class="group relative overflow-hidden rounded-2xl shadow bg-white">
+        <img src="img/auberges.jpg" alt="Auberge chaleureuse en nature" class="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-orange-400">Auberges</h3>
+          <p class="mt-2 text-gray-600">Accueil chaleureux, table gourmande et activités à deux pas.</p>
+          <a href="auberges.html" class="mt-4 inline-flex items-center gap-2 font-medium text-blue-600 hover:underline">
+            Découvrir
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+</section>
+
+<section class="relative h-[60vh] bg-cover bg-center" style="background-image: url('img/nature.jpg');">
+  <!-- Overlay pour lisibilité -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Contenu texte avec grid 12 -->
+  <div class="relative max-w-6xl mx-auto h-full grid grid-cols-12 items-center">
+    <!-- Contenu texte : occupe 6 colonnes sur 12 -->
+    <div class="col-span-12 md:col-span-6 text-white p-6">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">
+        La nature et la vie sauvage
+      </h2>
+      <p class="mt-4 text-lg md:text-xl text-white/90">
+        Découvrez des paysages préservés, observez la faune et profitez d’aventures uniques en pleine nature.
+      </p>
+    </div>
+
+    <div class="col-span-12 md:col-span-6">
+    
+    </div>
+  </div>
+</section>
+
+    </main>
+
+  <footer class="bg-cyan-950 text-gray-400 py-10 mt-12">
+    <div class="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+
+
+      <div>
+        <h3 class="text-xl font-bold text-orange-400 mb-2">Circuits d’aventure Québec</h3>
+        <p>Explorez le Québec autrement avec nos circuits d’aventure inoubliables.</p>
+      </div>
+
+  
+      <div>
+        <h4 class="font-semibold mb-3">Liens rapides</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-orange-400">Accueil</a></li>
+          <li><a href="propos.html" class="hover:text-orange-400">À propos</a></li>
+          <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div>
+        <h4 class="font-semibold mb-3">Suivez-nous</h4>
+        <div class="flex justify-center md:justify-start space-x-4 text-xl">
+         <a href="#" class="facebook">
+          <i class="fab fa-facebook-f text-2xl"></i>
+          <span class="sr-only">Facebook</span>
+        </a>
+
+         <a href="#" class="twitter">
+          <i class="fab fa-twitter text-2xl"></i>
+          <span class="sr-only">twitter</span>
+        </a>
+        <a href="#" class="linkedin">
+          <i class="fab fa-linkedin text-2xl"></i>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+        <a href="#" class="instagram">
+          <i class="fab fa-instagram text-2xl"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
+        <a href="#" class="youtube">
+          <i class="fab fa-youtube text-2xl"></i>
+          <span class="sr-only">YouTube</span>
+        </a>
+
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-orange-400 mt-8">
+      &copy; 2025 Circuits d’aventure Québec. Tous droits réservés.
+    </div>
+  </footer>
+  
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
 

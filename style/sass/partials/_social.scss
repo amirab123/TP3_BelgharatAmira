@@ -1,0 +1,54 @@
+
+@use 'variables' as *;
+.facebook {
+
+  color: $color-facebook;
+   transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-facebook-hover;
+  }
+}
+
+.linkedin {
+  color: $linkedin-color;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $linkedin-hover;
+         }
+}
+.twitter {
+  color: $color-twitter;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-twitter-hover;
+         }
+  }
+.instagram {
+    color: $color-instagram;
+    transition: color 0.3s ease;
+    
+    &:hover {
+        color: $color-instagram-hover;
+             }
+    }
+
+  
+    .youtube {
+ color :$color-youtube ;
+  text-decoration: none;
+      transition: color 0.3s ease;
+
+
+&
+:hover {
+  color :$color-youtube-hover;
+
+
+}
+
+
+ }
+

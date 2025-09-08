@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+@use 'typographe' as *;
+
+
+body {
+  background-color: $cyan-950;
+  font-family: $font-sans;
+  margin: 0;
+  padding: 0;
+}

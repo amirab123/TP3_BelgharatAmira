@@ -1,6 +1,12 @@
 
 $font-monospace: 'Courier New', monospace;
-$text-accent: #F97316;        // Orange vif (text-orange-400)
+$text-accent: #F97316;     
+$cyan-950: #083344;     // fond sombre possible
+$orange-500: #f97316;
+$orange-600: #ea580c;
+$white: #ffffff;
+
+// Orange vif (text-orange-400)
 // Couleurs boutons
 // ---------------------------
 $btn-orange: #c2410c; // Correspond à Tailwind orange-800
@@ -11,3 +17,27 @@ $bg-cyan: #0e7490;
 $bg-cyan-light: #155e75;
 $bg-cyan-lighter: #164e63;
 
+
+$color-facebook: #3b82f6;       // Couleur normale
+$color-facebook-hover: #2563eb;
+$color-twitter: #1da1f2;
+$color-instagram: #e1306c;
+$color-twitter-hover: #0d8ecf;
+$color-instagram-hover: #b22a5b;
+
+$linkedin-color: #1D4ED8;
+$linkedin-hover: #1E40AF;
+$color-border: #6b7280;           // border-gray-500
+
+$color-youtube:#FF0000;
+$color-youtube-hover:#CC0000;
+
+
+
+$hero-bg: '../../img/camping.jpg'; 
+$overlay: rgba(0, 0, 0, 0.5);
+
+
+$header-bg: $cyan-950;       // fond du header (noir/gris foncé)
+$header-text: #ffffff;     // texte (blanc)
+$header-hover: #f97316;
