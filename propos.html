@@ -15,25 +15,28 @@
 
 </head>
 <body>
-    <header class="flex justify-between items-center px-8 py-4 bg-cyan-950">
-   <div class="logo text-2xl font-bold">Québec Aventure Camping</div>
-    <nav>
-      <ul class="flex space-x-6">
-        <li><a href="index.html" class="hover:text-orange-400">Accueil</a></li>
-    
-        <li><a href="propos.html" class="hover:text-orange-400">À propos</a></li>
-            <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
-      </ul>
-    </nav>
+ <header class="grid grid-cols-12 items-center px-8 py-4 header">
 
-    </header>
+  <div class="col-span-6 text-2xl font-bold">
+    Circuits d’aventure Québec
+  </div>
+
+
+  <nav class="col-span-6">
+    <ul class="flex justify-end space-x-6">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="propos.html" class="nav-link">À propos</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
     <main>
 
 
       <section class="hero relative h-[80vh] grid grid-cols-12"
          style="background-image: url('img/gens.jpg'); background-size: cover; background-position: center;">
   <!-- Overlay pour lisibilité -->
-  <div class="absolute inset-0 bg-black/40"></div>
+  <div class="absolute inset-0"></div>
 
   <!-- Contenu -->
   <div class="hero__content col-span-6 col-start-4 text-center text-white self-center relative">
@@ -216,14 +219,14 @@
     </div>
   </div>
 </section>
-<section class="py-16 bg-gray-100">
-  <h2 class="text-center text-orange-400 text-3xl">
+<section class="py-16 ">
+  <h2 class="text-center text-orange-400 text-3xl ">
     Témoignages
   </h2>
-  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
     
     <!-- Témoignage 1 -->
-    <div class="text-left mx-auto max-w-sm testimonial ">
+    <div class="testimonial text-left mx-auto max-w-sm  bg-green-50 ">
       <div class="mb-4 text-black">
         <svg height="35px" class="mb-2" fill="#5a67d8" viewBox="0 0 32 32">
           <g>
@@ -244,7 +247,7 @@
     </div>
 
     <!-- Témoignage 2 -->
-    <div class="text-left mx-auto max-w-sm">
+    <div class="testimonial text-left mx-auto max-w-sm">
       <div class="mb-4 text-black">
         <svg height="35px" class="mb-2" fill="#5a67d8" viewBox="0 0 32 32">
           <g>
@@ -265,7 +268,7 @@
     </div>
 
     <!-- Témoignage 3 -->
-    <div class="text-left mx-auto max-w-sm">
+    <div class="testimonial text-left mx-auto max-w-sm">
       <div class="mb-4 text-black">
         <svg height="35px" class="mb-2" fill="#5a67d8" viewBox="0 0 32 32">
           <g>
@@ -286,7 +289,7 @@
     </div>
 
     <!-- Témoignage 4 -->
-    <div class="text-left mx-auto max-w-sm">
+    <div class="testimonial text-left mx-auto max-w-sm">
       <div class="mb-4 text-black">
         <svg height="35px" class="mb-2" fill="#5a67d8" viewBox="0 0 32 32">
           <g>
@@ -314,32 +317,6 @@
 
 
 
-<div class="text-left mx-auto max-w-sm">
-    <div class="mb-4 text-black">
-        <svg height="35px" class="mb-2" fill="#5a67d8" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve">
-            <g>
-                <g id="right_x5F_quote">
-                    <g>
-                        <path d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"></path>
-                        <path d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"></path>
-                    </g>
-                </g>
-            </g>
-        </svg>
-        <p class="mt-2 text-base leading-6">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
-            eaque, exercitationem praesentium nihil.
-        </p>
-        <div class="text-sm mt-5">
-            <a href="#"
-                class="font-medium leading-none text-indigo-600 hover:text-black transition duration-500 ease-in-out">Jonathan
-                Reinink
-            </a>
-            <p>CEO</p>
-        </div>
-    </div>
-</div>
 </main>
 <footer class="bg-cyan-950 text-gray-400 py-10 mt-12">
     <div class="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
