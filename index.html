@@ -38,11 +38,11 @@
   <!-- Contenu -->
   <div class="hero__content col-span-6 col-start-4 text-center text-white self-center">
     <h3 class="text-lg uppercase tracking-widest">Agence de Voyage</h3>
-    <h1 class="text-4xl md:text-6xl font-bold my-4 animate-fade-up">Circuits d’aventure Québec</h1>
+    <h1 class="text-4xl md:text-6xl font-bold my-4 animate-fade-up text-orange-400">Circuits d’aventure Québec</h1>
     <p class="max-w-xl mx-auto">
       Découvrez nos circuits uniques à travers le Québec et ailleurs 🌍
     </p>
-    <a href="#" class="btn">En savoir plus</a>
+    <a href="#" class="btn bg-orange-500">En savoir plus</a>
   </div>
 </section>
 
@@ -79,59 +79,80 @@
   </div>
 </section>
 
-<section class="destinations py-16 bg-green-200  ">
 
-
-  
+<section class="destinations py-16 bg-green-100">
   <h2 class="text-3xl font-bold text-center mb-12 text-orange-400">Nos destinations</h2>
-<div
-  class="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-xl md:flex-row">
-  <img
-    class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:!rounded-none md:!rounded-s-lg"
-    src="img/montremblant.jpg"
-    alt="" />
-  <div class="flex flex-col justify-start p-6">
-    <h5 class="mb-2 text-xl font-medium text-orange-400">Mont-Tremblant </h5>
-    <p class="mb-4 text-base text-gray-300">
-      This is a wider card with supporting text below as a natural lead-in
-      to additional content. This content is a little bit longer.
-    </p>
-    <p class="text-xs text-surface/75 dark:text-neutral-300">
-      Last updated 3 mins ago
-    </p>
-  </div>
-</div>
-  <div class="grid grid-cols-12  md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-  
-    <div class="destination  rounded-lg shadow-lg overflow-hidden">
-      <img src="img/montremblant.jpg" alt="Mont-Tremblant" class="w-full h-48 object-cover">
 
+  <div class="grid grid-cols-12 gap-8 max-w-7xl mx-auto">
     
-        <h3 class="text-xl font-semibold">Mont-Tremblant</h3>
-        <p class="p-4 text-gray-700">Découvrez les paysages époustouflants et les activités de plein air à Mont-Tremblant, une destination prisée pour les amateurs de nature et d'aventure.</p>
-
-      </div>
-  
-    <div class="destination  rounded-lg shadow-lg overflow-hidden">
-      <img src="img/gaspesie.jpg" alt="Parc national de la
-  Gaspésie" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold">Parc national de la Gaspésie</h3>
-        <p class="p-4 text-gray-700">Explorez les montagnes majestueuses et la faune diversifiée du Parc national de la Gaspésie, un paradis pour les randonneurs et les amoureux de la nature.</p>
-      </div>
-    </div>
-    <div class="destination  rounded-lg shadow-lg overflow-hidden">
-      <img src="img/Charlevoix.jpeg" alt="Charlevoix" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold">Charlevoix</h3>
-        <p class="p-4 text-gray-700">Découvrez la beauté naturelle et la culture riche de Charlevoix, une région reconnue pour ses paysages à couper le souffle et ses activités de plein air.</p>
+    <!-- Destination 1 -->
+    <div class="col-span-12 md:col-span-6">
+      <div class="flex flex-col rounded-lg bg-white shadow-md md:flex-row">
+        <img
+          class="h-64 w-full object-cover md:h-auto md:w-48 md:rounded-l-lg"
+          src="img/montremblant.jpg"
+          alt="Mont-Tremblant" />
+        <div class="flex flex-col justify-start p-6">
+          <h5 class="mb-2 text-xl font-medium text-orange-400">Mont-Tremblant</h5>
+          <p class="mb-4 text-base text-gray-700">
+            Découvrez les paysages époustouflants et les activités de plein air à Mont-Tremblant, une destination prisée pour les amateurs de nature et d'aventure.
+          </p>
+          <p class="text-xs text-gray-500">Dernière mise à jour : 3 min</p>
+        </div>
       </div>
     </div>
 
+    <!-- Destination 2 -->
+    <div class="col-span-12 md:col-span-6">
+      <div class="flex flex-col rounded-lg bg-white shadow-md md:flex-row">
+        <img
+          class="h-64 w-full object-cover md:h-auto md:w-48 md:rounded-l-lg"
+          src="img/gaspesie.jpg"
+          alt="Gaspésie" />
+        <div class="flex flex-col justify-start p-6">
+          <h5 class="mb-2 text-xl font-medium text-orange-400">Parc national de la Gaspésie</h5>
+          <p class="mb-4 text-base text-gray-700">
+            Explorez les montagnes majestueuses et la faune diversifiée du Parc national de la Gaspésie, un paradis pour les randonneurs et les amoureux de la nature.
+          </p>
+          <p class="text-xs text-gray-500">Dernière mise à jour : 5 min</p>
+        </div>
+      </div>
+    </div>
 
+    <!-- Destination 3 -->
+    <div class="col-span-12 md:col-span-6">
+      <div class="flex flex-col rounded-lg bg-white shadow-md md:flex-row">
+        <img
+          class="h-64 w-full object-cover md:h-auto md:w-48 md:rounded-l-lg"
+          src="img/charlevoix.jpeg"
+          alt="Charlevoix" />
+        <div class="flex flex-col justify-start p-6">
+          <h5 class="mb-2 text-xl font-medium text-orange-400">Charlevoix</h5>
+          <p class="mb-4 text-base text-gray-700">
+            Découvrez la beauté naturelle et la culture riche de Charlevoix, une région reconnue pour ses paysages à couper le souffle et ses activités de plein air.
+          </p>
+          <p class="text-xs text-gray-500">Dernière mise à jour : 12 min</p>
+        </div>
+      </div>
+    </div>
 
-  
- 
+    <!-- Destination 4 -->
+    <div class="col-span-12 md:col-span-6">
+      <div class="flex flex-col rounded-lg bg-white shadow-md md:flex-row">
+        <img
+          class="h-64 w-full object-cover md:h-auto md:w-48 md:rounded-l-lg"
+          src="img/saguenay.jpg"
+          alt="Saguenay" />
+        <div class="flex flex-col justify-start p-6">
+          <h5 class="mb-2 text-xl font-medium text-orange-400">Fjord du Saguenay</h5>
+          <p class="mb-4 text-base text-gray-700">
+            Admirez les falaises impressionnantes et profitez des croisières inoubliables dans le fjord du Saguenay, un joyau naturel du Québec.
+          </p>
+          <p class="text-xs text-gray-500">Dernière mise à jour : 20 min</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
