@@ -87,7 +87,112 @@
     </div>
   </div>
 </section>
+  <!--  CONTACT -->
+<section class="py-16 ">
+  <div class="container mx-auto px-6 lg:px-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
+      <!-- Formulaire -->
+      <div>
+         <h2 class="text-3xl font-bold text-center mb-4">Contactez-nous</h2>
+    <p class="text-green-600 text-center mb-12">
+      Pour toute question ou réservation concernant notre agence de camping & voyages, remplissez le formulaire ci-dessous.
+    </p>
+
+    <form action="#" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-green-600 p-8 rounded-xl shadow-lg"   novalidate >
+      
+      <!-- Champ Nom -->
+      <div class="flex flex-col">
+        <label for="nom" class="mb-2 text-sm font-semibold">
+          Nom <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="nom" name="nom" required
+               class="p-3 rounded-md bg-green-100 text-black focus:outline-none focus:ring-2 focus:ring-orange-500">
+      </div>
+
+  
+      <div class="flex flex-col">
+        <label for="prenom" class="mb-2 text-sm font-semibold">
+          Prénom <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="prenom" name="prenom" required
+               class="p-3 rounded-md bg-green-100 text-black focus:outline-none focus:ring-2 focus:ring-orange-500">
+      </div>
+
+      <!-- Champ Email -->
+      <div class="flex flex-col">
+        <label for="email" class="mb-2 text-sm font-semibold">
+          Email <span class="text-red-500">*</span>
+        </label>
+        <input type="email" id="email" name="email" required
+               class="p-3 rounded-md bg-green-100 text-black focus:outline-none focus:ring-2 focus:ring-orange-500">
+      </div>
+
+      <!-- Champ Téléphone -->
+      <div class="flex flex-col">
+        <label for="telephone" class="mb-2 text-sm font-semibold">
+          Téléphone <span class="text-red-500">*</span>
+        </label>
+        <input type="tel" id="telephone" name="telephone" required
+               class="p-3 rounded-md bg-green-100 text-black focus:outline-none focus:ring-2 focus:ring-orange-500">
+      </div>
+
+      <!-- Champ Code Postal -->
+      <div class="flex flex-col">
+        <label for="code_postal" class="mb-2 text-sm font-semibold">
+          Code postal <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="code_postal" name="code_postal" required
+               class="p-3 rounded-md bg-green-100 text-black focus:outline-none focus:ring-2 focus:ring-orange-500">
+      </div>
+
+      <!-- Champ Adresse -->
+      <div class="flex flex-col md:col-span-1">
+        <label for="adresse" class="mb-2 text-sm font-semibold">
+          Adresse <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="adresse" name="adresse" required
+               class="p-3 rounded-md bg-green-100 text-black focus:outline-none focus:ring-2 focus:ring-orange-500">
+      </div>
+
+      <!-- Champ Sujet -->
+      <div class="flex flex-col md:col-span-2">
+        <label for="sujet" class="mb-2 text-sm font-semibold">
+          Sujet <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="sujet" name="sujet" required
+               class="p-3 rounded-md bg-green-100 text-black focus:outline-none focus:ring-2 focus:ring-orange-500">
+      </div>
+
+      <!-- Champ Message -->
+      <div class="flex flex-col md:col-span-2">
+        <label for="message" class="mb-2 text-sm font-semibold">
+          Message <span class="text-red-500">*</span>
+        </label>
+        <textarea id="message" name="message" rows="5" required
+                  class="p-3 rounded-md bg-green-100 text-black focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+      </div>
+
+      <!-- Bouton -->
+      <div class="md:col-span-2 text-center">
+        <button type="submit" 
+                class="px-6 py-3 bg-green-500 text-white font-bold rounded-full hover:bg-orange-600 transition">
+          Envoyer le message
+        </button>
+      </div>
+    </form>
+      </div>
+
+      <!-- Carte -->
+      <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.878254456334!2d-73.567256!3d45.501688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a5478c9d1b1%3A0x19cfa9a316bed36!2sMontr%C3%A9al%2C%20QC!5e0!3m2!1sfr!2sca!4v1692713790000!5m2!1sfr!2sca" 
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <footer class="bg-gren-950 text-gray-400 py-10 mt-12">
