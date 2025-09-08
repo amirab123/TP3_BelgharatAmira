@@ -19,6 +19,13 @@ Tailwind CSS pour le design responsive
 SASS pour la gestion du style
 
 
+### Section Témoignages
+#page propros.html
+
+Pour faciliter la création de cette section et des composants Tailwind associés, nous nous sommes inspirés du site [Tailwind Flex](https://tailwindflex.com/@samuel33/simple-testimonial).
+
+
+
 Cloner le dépôt :
 
 site :  
