@@ -1,9 +1,3 @@
-const installButton = document.getElementById('installBtn');
-if (installButton) {
-  installButton.addEventListener('click', installPWA);
-} else {
-  console.error('Le bouton d’installation est introuvable !');
-}
 
 
 
