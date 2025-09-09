@@ -56,10 +56,11 @@ self.addEventListener('fetch', e => {
           }
 
           // On clone pour le cache
-          const responseClone = networkRes.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(e.request, responseClone));
-
-          return networkRes;
+     const responseClone = networkRes.clone();
+return caches.open(CACHE_NAME)
+  .then(cache => cache.put(e.request, responseClone))
+  .then(() => networkRes);
+  
         })
         .catch(() => {
           // Fallback pour documents HTML

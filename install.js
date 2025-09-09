@@ -6,6 +6,7 @@ if (installButton) {
 }
 
 
+
 let deferredInstallPrompt = null;
 
 // Capture beforeinstallprompt
