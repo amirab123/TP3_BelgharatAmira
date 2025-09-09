@@ -1,32 +1,43 @@
 let deferredInstallPrompt = null;
 
+// ------------------------
 // Capture de l'événement beforeinstallprompt
+// ------------------------
 window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();             // empêche l'install automatique
-  deferredInstallPrompt = e;      // stocke l'événement
+  e.preventDefault();               // Empêche l'installation automatique
+  deferredInstallPrompt = e;        // Stocke l'événement pour plus tard
 
   const btn = document.getElementById('installBtn');
-  if (btn) btn.removeAttribute('hidden');  // affiche le bouton
+  if (btn) btn.removeAttribute('hidden'); // Affiche le bouton
+  console.log('beforeinstallprompt déclenché');
 });
 
-// Fonction déclenchée au clic sur le bouton Installer
+// ------------------------
+// Fonction pour déclencher le prompt au clic
+// ------------------------
 function installPWA(evt) {
   if (!deferredInstallPrompt) {
     console.log('Prompt non disponible pour l’instant');
     return;
   }
 
-  deferredInstallPrompt.prompt();                 // affiche le prompt
-  evt.currentTarget.setAttribute('hidden', true); // cache le bouton
+  // Affiche le prompt
+  deferredInstallPrompt.prompt();
 
+  // Cache le bouton
+  if (evt.currentTarget) evt.currentTarget.setAttribute('hidden', true);
+
+  // Récupère le choix de l’utilisateur
   deferredInstallPrompt.userChoice.then(choice => {
-    console.log('Choix utilisateur:', choice.outcome); // accepted ou dismissed
-    deferredInstallPrompt = null;
+    console.log('Choix utilisateur :', choice.outcome); // accepted ou dismissed
+    deferredInstallPrompt = null; // Réinitialise
   });
 }
 
+// ------------------------
 // Lier la fonction au bouton
-const installBtn = document.getElementById('installBtn');
-if (installBtn) installBtn.addEventListener('click', installPWA);
-
-
+// ------------------------
+document.addEventListener('DOMContentLoaded', () => {
+  const installBtn = document.getElementById('installBtn');
+  if (installBtn) installBtn.addEventListener('click', installPWA);
+});
