@@ -1,43 +1,41 @@
-let deferredInstallPrompt = null;
+// install.js
 
-// ------------------------
-// Capture de l'événement beforeinstallprompt
-// ------------------------
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();               // Empêche l'installation automatique
-  deferredInstallPrompt = e;        // Stocke l'événement pour plus tard
+let deferredPrompt;
+const installButton = document.getElementById("installButton");
 
-  const btn = document.getElementById('installBtn');
-  if (btn) btn.removeAttribute('hidden'); // Affiche le bouton
-  console.log('beforeinstallprompt déclenché');
-});
 
-// ------------------------
-// Fonction pour déclencher le prompt au clic
-// ------------------------
-function installPWA(evt) {
-  if (!deferredInstallPrompt) {
-    console.log('Prompt non disponible pour l’instant');
-    return;
-  }
-
-  // Affiche le prompt
-  deferredInstallPrompt.prompt();
-
-  // Cache le bouton
-  if (evt.currentTarget) evt.currentTarget.setAttribute('hidden', true);
-
-  // Récupère le choix de l’utilisateur
-  deferredInstallPrompt.userChoice.then(choice => {
-    console.log('Choix utilisateur :', choice.outcome); // accepted ou dismissed
-    deferredInstallPrompt = null; // Réinitialise
-  });
+if (installButton) {
+  installButton.style.display = "none";
 }
 
-// ------------------------
-// Lier la fonction au bouton
-// ------------------------
-document.addEventListener('DOMContentLoaded', () => {
-  const installBtn = document.getElementById('installBtn');
-  if (installBtn) installBtn.addEventListener('click', installPWA);
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+
+
+  if (installButton) {
+    installButton.style.display = "block";
+  }
 });
+
+
+if (installButton) {
+  installButton.addEventListener("click", async () => {
+    if (!deferredPrompt) {
+      return;
+    }
+ 
+    deferredPrompt.prompt();
+
+   
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log(`Résultat installation : ${outcome}`);
+
+    // Réinitialiser la variable
+    deferredPrompt = null;
+
+    // Cacher le bouton après l’installation
+    installButton.style.display = "none";
+  });
+}

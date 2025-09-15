@@ -6,19 +6,17 @@
     <title>Circuits d’aventure Québec</title>
      <meta name="description" content="Circuits d’aventure Québec">
   <script src="https://cdn.tailwindcss.com"></script>
-
-
     <link rel="stylesheet" href="style/css/main.css">
-
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="img/traveler.png" type="image/png">
 
 </head>
 
-<body class="bg-green-950 text-white font-sans">
+<body class="page">
   <header class="grid grid-cols-12 items-center px-8 py-4 header bg-green-950">
 
   <div class="col-span-6 text-2xl font-bold">
+
     Circuits d’aventure Québec
   </div>
 
@@ -87,20 +85,24 @@
     </div>
   </div>
 </section>
-  <!--  CONTACT -->
+ 
 <section class="py-16 ">
   <div class="container mx-auto px-6 lg:px-20">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-      <!-- Formulaire -->
+
       <div>
          <h2 class="text-3xl font-bold text-center mb-4">Contactez-nous</h2>
     <p class="text-green-600 text-center mb-12">
       Pour toute question ou réservation concernant notre agence de camping & voyages, remplissez le formulaire ci-dessous.
     </p>
 
-    <form action="#" method="POST" class="grid grid-cols-12 gap-6 bg-green-600 p-8 rounded-xl shadow-lg" novalidate>
-  
+
+
+<!-- Bloc d'erreurs -->
+<div id="error-messages" class="hidden col-span-12 bg-red-100 text-red-700 p-4 rounded-lg mb-4"></div>
+
+<form action="#" method="POST" class="grid grid-cols-12 gap-6 bg-green-500 p-8 rounded-xl shadow-lg" novalidate>
   <!-- Nom -->
   <div class="col-span-12 md:col-span-6">
     <label for="nom" class="mb-2 text-sm font-semibold">
@@ -176,12 +178,13 @@
   <!-- Bouton -->
   <div class="col-span-12 text-center">
     <button type="submit" 
-            class="px-6 py-3 bg-green-500 text-white font-bold rounded-full hover:bg-orange-600 transition">
+            class="px-6 py-3 bg-green-800 text-white font-bold rounded-full hover:bg-orange-600 transition">
       Envoyer le message
     </button>
   </div>
-
 </form>
+
+
 
       </div>
 
@@ -404,7 +407,7 @@
   </footer>
   
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
- <script src="js/validation.js"></script>
+ <script src="js/validation.js" defer></script>
 
 
 

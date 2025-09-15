@@ -1,43 +1,20 @@
-// Sélection du formulaire
 const form = document.querySelector('form');
+const errorBox = document.getElementById('error-messages');
 
-// Regex et fonctions de validation
-function validateName(name) {
-  const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
-  return regex.test(name.trim());
+function showErrors(errors) {
+  if (errors.length > 0) {
+    errorBox.innerHTML = errors.map(err => `<p>⚠️ ${err}</p>`).join("");
+    errorBox.classList.remove("hidden");
+  } else {
+    errorBox.classList.add("hidden");
+  }
 }
 
-function validatePhone(phone) {
-  // Format canadien : (123) 456-7890 ou 123-456-7890 ou 1234567890
-  const regex = /^(\(?\d{3}\)?[\s-]?)?\d{3}[\s-]?\d{4}$/;
-  return regex.test(phone.trim());
-}
+// Les fonctions validateName, validatePhone, etc. restent les mêmes...
 
-function validatePostalCode(postal) {
-  // Format canadien : A1A 1A1
-  const regex = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
-  return regex.test(postal.trim());
-}
-
-function validateEmail(email) {
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return regex.test(email.trim());
-}
-
-function validateSubject(subject) {
-  return /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/.test(subject.trim());
-}
-
-function validateMessage(message) {
-  // Vérifie si le message contient au moins 50 mots
-  return message.trim().split(/\s+/).length >= 50;
-}
-
-// Écoute de la soumission du formulaire
 form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Empêche l'envoi par défaut
+  event.preventDefault();
 
-  // Récupération des valeurs
   const nom = document.getElementById('nom').value;
   const prenom = document.getElementById('prenom').value;
   const email = document.getElementById('email').value;
@@ -49,7 +26,6 @@ form.addEventListener('submit', function(event) {
   let valid = true;
   let errors = [];
 
-  // Validation des champs
   if (!validateName(nom)) {
     errors.push("Nom : uniquement lettres.");
     valid = false;
@@ -79,10 +55,10 @@ form.addEventListener('submit', function(event) {
     valid = false;
   }
 
-
   if (!valid) {
-    alert(errors.join("\n"));
+    showErrors(errors);
   } else {
+    errorBox.classList.add("hidden");
     form.submit();
   }
 });

@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+
+
+
+
+.page {
+  background-color: $green-950;
+  color: $white;
+  min-width: 500px;
+
+
+  &__header {
+    padding: 1rem;
+  
+  }
+
+  &__content {
+    padding: 2rem;
+  }
+
+  &__footer {
+    padding: 1rem;
+
+   
+}}
