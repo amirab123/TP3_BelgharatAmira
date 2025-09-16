@@ -1,6 +1,6 @@
 Ce projet a pour objectif de créer un site web interactif pour une agence de voyage spécialisée dans le camping au Québec.
 Fonctionnalités principales :
-# 🌲 Site Web — Agence de Voyage Camping Québec
+# 🌲 Site Web — Agence de Voyage :  Circuits d’aventure Québec
 
 ## 🎯 Objectif du projet
 Ce projet a pour objectif de créer un **site web interactif** pour une agence de voyage spécialisée dans le camping au Québec.
@@ -34,7 +34,7 @@ Ce projet a pour objectif de créer un **site web interactif** pour une agence d
   - Présentation de l’agence
   - Galerie photo interactive inspirée de [Material Tailwind Gallery](https://www.material-tailwind.com/docs/v3/html/gallery)
 
--- # 🌲 Site Web — Agence de Voyage Camping Québec
+-- # 🌲 Site Web — Agence de Voyage :  Circuits d’aventure Québec.
 
 ## 🎯 Objectif du projet
 Ce projet a pour objectif de créer un **site web interactif** pour une agence de voyage spécialisée dans le camping au Québec.
@@ -69,9 +69,6 @@ Ce projet a pour objectif de créer un **site web interactif** pour une agence d
   - Galerie photo interactive inspirée de [Material Tailwind Gallery](https://www.material-tailwind.com/docs/v3/html/gallery)
 
 ---
-
-##  Installation & utilisation
-### Cloner le dépôt
 ```bash
 
 
