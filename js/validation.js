@@ -1,64 +1,45 @@
-const form = document.querySelector('form');
-const errorBox = document.getElementById('error-messages');
 
-function showErrors(errors) {
-  if (errors.length > 0) {
-    errorBox.innerHTML = errors.map(err => `<p>⚠️ ${err}</p>`).join("");
-    errorBox.classList.remove("hidden");
-  } else {
-    errorBox.classList.add("hidden");
-  }
-}
 
-// Les fonctions validateName, validatePhone, etc. restent les mêmes...
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
+const form = document.getElementById("contactForm");
+const errorMessages = document.getElementById("error-messages");
+const successMessage = document.getElementById("success-message");
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); 
 
-  const nom = document.getElementById('nom').value;
-  const prenom = document.getElementById('prenom').value;
-  const email = document.getElementById('email').value;
-  const telephone = document.getElementById('telephone').value;
-  const code_postal = document.getElementById('code_postal').value;
-  const sujet = document.getElementById('sujet').value;
-  const message = document.getElementById('message').value;
+  
+  errorMessages.innerHTML = "";
+  errorMessages.classList.add("hidden");
 
-  let valid = true;
+  const nom = document.getElementById("nom").value.trim();
+  const prenom = document.getElementById("prenom").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const telephone = document.getElementById("telephone").value.trim();
+  const codePostal = document.getElementById("code_postal").value.trim();
+  const adresse = document.getElementById("adresse").value.trim();
+  const sujet = document.getElementById("sujet").value.trim();
+  const message = document.getElementById("message").value.trim();
+
   let errors = [];
 
-  if (!validateName(nom)) {
-    errors.push("Nom : uniquement lettres.");
-    valid = false;
-  }
-  if (!validateName(prenom)) {
-    errors.push("Prénom : uniquement lettres.");
-    valid = false;
-  }
-  if (!validateEmail(email)) {
-    errors.push("Email invalide.");
-    valid = false;
-  }
-  if (!validatePhone(telephone)) {
-    errors.push("Téléphone canadien invalide.");
-    valid = false;
-  }
-  if (!validatePostalCode(code_postal)) {
-    errors.push("Code postal canadien invalide.");
-    valid = false;
-  }
-  if (!validateSubject(sujet)) {
-    errors.push("Sujet : uniquement lettres.");
-    valid = false;
-  }
-  if (!validateMessage(message)) {
-    errors.push("Message : minimum 50 mots.");
-    valid = false;
-  }
+  if (nom.length < 2) errors.push("Le nom doit contenir au moins 2 caractères.");
+  if (prenom.length < 2) errors.push("Le prénom doit contenir au moins 2 caractères.");
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.push("L'email n'est pas valide.");
+  if (!/^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/.test(telephone)) errors.push("Le téléphone n'est pas valide.");
+  if (!/^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/.test(codePostal)) errors.push("Le code postal n'est pas valide.");
+  if (adresse.length < 5) errors.push("L'adresse est trop courte.");
+  if (sujet.length < 3) errors.push("Le sujet est trop court.");
+  if (message.length < 10) errors.push("Le message doit contenir au moins 10 caractères.");
 
-  if (!valid) {
-    showErrors(errors);
+  if (errors.length > 0) {
+
+    errorMessages.innerHTML = "<ul class='list-disc list-inside'>" + errors.map(err => `<li>${err}</li>`).join("") + "</ul>";
+    errorMessages.classList.remove("hidden");
   } else {
-    errorBox.classList.add("hidden");
-    form.submit();
+
+      successMessage.classList.remove("hidden");
+  errorMessages.classList.add("hidden");
+  form.reset();
+    form.submit(); 
   }
 });
