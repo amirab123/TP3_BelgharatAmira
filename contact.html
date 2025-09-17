@@ -13,10 +13,9 @@
 </head>
 
 <body class="page">
-  <header class="grid grid-cols-12 items-center px-8 py-4 header bg-green-950">
+  <header class="grid grid-cols-12 items-center px-8 py-4 header bg-green-950 mx-auto max-w-screen-xl min-w-[500px]">
 
   <div class="col-span-6 text-2xl font-bold">
-
     Circuits d’aventure Québec
   </div>
 
@@ -25,14 +24,14 @@
     <ul class="flex justify-end space-x-6 ">
       <li><a href="index.html" class="nav-link">Accueil</a></li>
       <li><a href="propos.html" class="nav-link">À propos</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="contact.html" class="nav-link font-semibold ">Contact</a></li>
     </ul>
   </nav>
 </header>
 
     <main>
 
-<section class="hero relative h-[70vh] grid grid-cols-12 bg-cover bg-center bg-no-repeat" 
+<section class="hero relative h-[70vh] grid grid-cols-12 bg-cover bg-center bg-no-repeat mx-auto max-w-screen-xl min-w-[500px]" 
          style="background-image: url('img/contact2.jpg');">
 
   <div class="hero__content col-span-6 col-start-4 text-center text-white self-center p-6 rounded-lg">
@@ -50,7 +49,7 @@
   </div>
 </section>
 
-<section class="py-20 bg-green-100">
+<section class="py-20 bg-green-100 mx-auto max-w-screen-xl min-w-[500px]">
   <div class="max-w-6xl mx-auto px-4 text-center mb-12">
     <h2 class="text-4xl md:text-5xl font-extrabold text-green-800">Nos coordonnées</h2>
   
@@ -86,24 +85,25 @@
   </div>
 </section>
  
-<section class="py-16 ">
-  <div class="container mx-auto px-6 lg:px-20">
+<section class="py-16 bg-green-900 mx-auto max-w-screen-xl min-w-[500px]">
+  <div class=" px-6 lg:px-20">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
 
       <div>
          <h2 class="text-3xl font-bold text-center mb-4">Contactez-nous</h2>
-    <p class="text-green-600 text-center mb-12">
+    <p class="text-white text-center font-bold mb-12">
       Pour toute question ou réservation concernant notre agence de camping & voyages, remplissez le formulaire ci-dessous.
     </p>
 
 
 
-<!-- Bloc d'erreurs -->
 <div id="error-messages" class="hidden col-span-12 bg-red-100 text-red-700 p-4 rounded-lg mb-4"></div>
+<div id="success-message" class="hidden text-green-600 mt-4">
+  Votre message a été envoyé avec succès. Merci de nous avoir contactés !
+</div>
+<form action="" method="POST"   id="contactForm" class="grid grid-cols-12 gap-6 bg-green-200 text-green-800 p-8 rounded-xl shadow-lg" novalidate>
 
-<form action="#" method="POST" class="grid grid-cols-12 gap-6 bg-green-500 p-8 rounded-xl shadow-lg" novalidate>
-  <!-- Nom -->
   <div class="col-span-12 md:col-span-6">
     <label for="nom" class="mb-2 text-sm font-semibold">
       Nom <span class="text-red-500">*</span>
@@ -112,7 +112,7 @@
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
   </div>
 
-  <!-- Prénom -->
+ 
   <div class="col-span-12 md:col-span-6">
     <label for="prenom" class="mb-2 text-sm font-semibold">
       Prénom <span class="text-red-500">*</span>
@@ -121,7 +121,7 @@
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
   </div>
 
-  <!-- Email -->
+
   <div class="col-span-12 md:col-span-6">
     <label for="email" class="mb-2 text-sm font-semibold">
       Email <span class="text-red-500">*</span>
@@ -130,7 +130,7 @@
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
   </div>
 
-  <!-- Téléphone -->
+ 
   <div class="col-span-12 md:col-span-6">
     <label for="telephone" class="mb-2 text-sm font-semibold">
       Téléphone <span class="text-red-500">*</span>
@@ -139,7 +139,7 @@
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
   </div>
 
-  <!-- Code postal -->
+ 
   <div class="col-span-12 md:col-span-4">
     <label for="code_postal" class="mb-2 text-sm font-semibold">
       Code postal <span class="text-red-500">*</span>
@@ -148,7 +148,7 @@
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
   </div>
 
-  <!-- Adresse -->
+ 
   <div class="col-span-12 md:col-span-8">
     <label for="adresse" class="mb-2 text-sm font-semibold">
       Adresse <span class="text-red-500">*</span>
@@ -157,7 +157,7 @@
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
   </div>
 
-  <!-- Sujet -->
+ 
   <div class="col-span-12">
     <label for="sujet" class="mb-2 text-sm font-semibold">
       Sujet <span class="text-red-500">*</span>
@@ -166,7 +166,7 @@
            class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
   </div>
 
-  <!-- Message -->
+
   <div class="col-span-12">
     <label for="message" class="mb-2 text-sm font-semibold">
       Message <span class="text-red-500">*</span>
@@ -199,10 +199,10 @@
   </div>
 </section>
 
-<section class="py-16 bg-green-100">
-  <h2 class="text-center text-orange-400 text-3xl mb-12">Témoignages</h2>
+<section class="py-16 bg-green-100 mx-auto max-w-screen-xl min-w-[500px]"">
+  <h2 class="text-center text-orange-400 text-4xl mb-12 font-bold">Témoignages</h2>
 
-  <div class="max-w-6xl mx-auto px-4 grid grid-cols-12 gap-8">
+  <div class=" px-4 grid grid-cols-12 gap-8">
 
  
     <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-green-700 text-gray-400 p-8 rounded-md shadow-sm testimonial-card">
@@ -353,30 +353,15 @@
 </section>
 
 
-<footer class="bg-gren-950 text-gray-400 py-10 mt-12">
-    <div class="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+  <footer class="bg-green-950 text-gray-400 py-10 mt-12  mx-auto max-w-screen-xl min-w-[500px]">
+  <div class="container mx-auto px-8 grid grid-cols-1 xl:grid-cols-12 gap-8 text-center xl:text-left">
 
-
-      <div>
-        <h3 class="text-xl font-bold text-orange-400 mb-2">Circuits d’aventure Québec</h3>
-        <p>Explorez le Québec autrement avec nos circuits d’aventure inoubliables.</p>
-      </div>
-
-  
-      <div>
-        <h4 class="font-semibold mb-3">Liens rapides</h4>
-        <ul class="space-y-2">
-          <li><a href="index.html" class="hover:text-orange-400">Accueil</a></li>
-          <li><a href="propos.html" class="hover:text-orange-400">À propos</a></li>
-          <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Réseaux sociaux -->
-      <div>
-        <h4 class="font-semibold mb-3">Suivez-nous</h4>
-        <div class="flex justify-center md:justify-start space-x-4 text-xl">
-         <a href="#" class="facebook">
+ 
+    <div class="xl:col-span-4">
+      <h3 class="text-xl font-bold text-orange-400 mb-2">⛺ Circuits d’aventure Québec</h3>
+      <p>Explorez le Québec autrement avec nos circuits d’aventure inoubliables.</p>
+<div class="flex gap-4 flex justify-center md:justify-start mt-4">
+      <a href="#" class="facebook">
           <i class="fab fa-facebook-f text-2xl"></i>
           <span class="sr-only">Facebook</span>
         </a>
@@ -397,107 +382,43 @@
           <i class="fab fa-youtube text-2xl"></i>
           <span class="sr-only">YouTube</span>
         </a>
-
-        </div>
-      </div>
     </div>
-    <div class="text-center text-orange-400 mt-8">
-      &copy; 2025 Circuits d’aventure Québec. Tous droits réservés.
-    </div>
-  </footer>
-  <footer class="bg-green-950 text-gray-400 py-12 mt-16">
-  <div class="container mx-auto px-6 grid grid-cols-12 gap-8">
+</div>
 
-    <!-- Logo + description -->
-    <div class="col-span-12 md:col-span-4 text-center md:text-left">
-      <h2 class="text-2xl font-bold text-white mb-4">🌿 Nature Québec</h2>
-      <p class="text-sm leading-relaxed">
-        Nous protégeons l’environnement et sensibilisons la communauté à l’importance 
-        de préserver la biodiversité au Québec.
-      </p>
-    </div>
-
-    <!-- Liens rapides -->
-    <div class="col-span-12 md:col-span-4 text-center">
-      <h3 class="text-lg font-semibold text-white mb-4">Liens rapides</h3>
+    <div class="xl:col-span-3">
+      <h4 class="font-semibold mb-3">Liens rapides</h4>
       <ul class="space-y-2">
-        <li><a href="#hero" class="hover:text-orange-500 transition">Accueil</a></li>
-        <li><a href="#contact" class="hover:text-orange-500 transition">Contact</a></li>
-        <li><a href="#temoignages" class="hover:text-orange-500 transition">Témoignages</a></li>
+        <li><a href="index.html" class="hover:text-orange-400 font-semibold">Accueil</a></li>
+        <li><a href="propos.html" class="hover:text-orange-400">À propos</a></li>
+        <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
+         <li><a href="forfaits.html" class="hover:text-orange-400">Forfaits</a></li>
       </ul>
     </div>
 
-    <!-- Coordonnées -->
-    <div class="col-span-12 md:col-span-4 text-center md:text-right">
-      <h3 class="text-lg font-semibold text-white mb-4">Contact</h3>
-      <p>📍 123 rue des Forêts, Québec, QC</p>
-      <p>📞 (418) 123-4567</p>
-      <p>✉️ info@natureqc.org</p>
-    </div>
-  </div>
 
-  <!-- Bas de page -->
-  <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-    © 2025 Nature Québec. Tous droits réservés.
-  </div>
-</footer>
-<footer class="bg-green-950 text-gray-400 py-12 mt-16">
-  <div class="container mx-auto px-6 grid grid-cols-12 gap-8">
-
-    <!-- Logo + description -->
-    <div class="col-span-12 md:col-span-4 text-center md:text-left">
-      <h2 class="text-2xl font-bold text-white mb-4">🌿 Nature Québec</h2>
-      <p class="text-sm leading-relaxed">
-        Nous protégeons l’environnement et sensibilisons la communauté à l’importance 
-        de préserver la biodiversité au Québec.
-      </p>
-      <!-- Icônes réseaux sociaux -->
-      <div class="flex justify-center md:justify-start space-x-4 mt-4">
-        <a href="#" class="hover:text-orange-500 transition" aria-label="Facebook">
-          <!-- Icône Facebook -->
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.2 3-3.2.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0022 12z"/>
-          </svg>
-        </a>
-        <a href="#" class="hover:text-orange-500 transition" aria-label="Twitter">
-          <!-- Icône Twitter (X) -->
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M18 2h3l-7.5 9.4L22 22h-6l-4.6-6-4.6 6H2l8.5-10.6L2 2h6l4 5.2L18 2z"/>
-          </svg>
-        </a>
-        <a href="#" class="hover:text-orange-500 transition" aria-label="Instagram">
-          <!-- Icône Instagram -->
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.8-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/>
-          </svg>
-        </a>
+    <div class="xl:col-span-3">
+      <h4 class="font-semibold mb-3 gap-2">Réalisé par :</h4>
+    <p class="text-orange-400 font-medium">Amira belgharat</p>
       </div>
-    </div>
+   
 
-    <!-- Liens rapides -->
-    <div class="col-span-12 md:col-span-4 text-center">
-      <h3 class="text-lg font-semibold text-white mb-4">Liens rapides</h3>
-      <ul class="space-y-2">
-        <li><a href="#hero" class="hover:text-orange-500 transition">Accueil</a></li>
-        <li><a href="#contact" class="hover:text-orange-500 transition">Contact</a></li>
-        <li><a href="#temoignages" class="hover:text-orange-500 transition">Témoignages</a></li>
-      </ul>
-    </div>
-
-    <!-- Coordonnées -->
-    <div class="col-span-12 md:col-span-4 text-center md:text-right">
-      <h3 class="text-lg font-semibold text-white mb-4">Contact</h3>
-      <p>📍 123 rue des Forêts, Québec, QC</p>
-      <p>📞 (418) 123-4567</p>
-      <p>✉️ info@natureqc.org</p>
-    </div>
+   <div class="xl:col-span-2">
+  <h4 class="font-semibold mb-3">Nos partenaires</h4>
+  <div class="flex gap-4 justify-center xl:justify-end">
+    <img src="img/gouvernement_quebec_partenaire-JCCM.png" alt="Partenaire 1" class="h-8 bg-white">
+    <img src="img/logo-desjardins-1100x619.png" alt="Partenaire 2" class="h-8">
   </div>
+</div>
 
-  <!-- Bas de page -->
-  <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-    © 2025 Nature Québec. Tous droits réservés.
+
+  </div>
+<div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm  text-center text-orange-400 mt-8">
+
+    &copy; 2025 Circuits d’aventure Québec. Tous droits réservés.
+ 
   </div>
 </footer>
+
 
   
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
