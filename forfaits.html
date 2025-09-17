@@ -11,26 +11,64 @@
     <link rel="icon" href="img/traveler.png" type="image/png">
 </head>
 <body class="page">
-
-  <!-- Header -->
-  <header class=" text-white py-6  mx-auto max-w-screen-xl min-w-[500px]">
-    <div class=" flex justify-between items-center px-6">
-      <h1 class="text-2xl font-bold">Circuits d’aventure Québec</h1>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="index.html" class="hover:text-orange-400">Accueil</a></li>
-                    <li><a href="propos.html" class="hover:text-orange-400">À propos</a></li>
-          <li><a href="forfaits.html" class="text-orange-400 font-semibold">Forfaits</a></li>
-          <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
-        </ul>
-      </nav>
+<header class="bg-green-950 px-8 py-4 relative  mx-auto max-w-screen-xl min-w-[500px] ">
+  <div class=" mx-auto grid grid-cols-12 items-center">
+  
+    <div class="col-span-6 text-2xl font-bold text-white">
+    
+         <a href="index.html" class="flex items-center gap-1 text hover:text-orange-400" aria-label="Accueil"
+        title="Retour à l'accueil">
+       ⛺ <span>  Circuits d’aventure Québec</span>
+      </a>
     </div>
-  </header>
+
+
+    <div class="col-span-6 text-right md:hidden relative">
+      <input type="checkbox" id="menu-toggle" class="peer hidden">
+      <label for="menu-toggle" class="cursor-pointer text-white text-3xl select-none z-20">
+        &#9776;
+      </label>
+
+  
+      <div class="absolute right-0 mt-2 w-48 bg-green-950 border border-green-800 rounded-md
+                  opacity-0 invisible peer-checked:opacity-100 peer-checked:visible
+                  transition-opacity duration-300 z-10">
+   <ul class="grid grid-cols-1 md:grid-cols-12 gap-4 text-right p-4">
+  <li class="md:col-span-2"><a href="index.html" class="nav-link hover:text-orange-400">Accueil</a></li>
+  <li class="md:col-span-2"><a href="propos.html" class="nav-link hover:text-orange-400">À propos</a></li>
+  <li class="md:col-span-2"><a href="contact.html" class="nav-link hover:text-orange-400">Contact</a></li>
+  <li class="md:col-span-2">
+    <a href="forfaits.html" class="nav-link text-white hover:text-orange-400">Forfaits</a>
+  </li>
+  <li class="md:col-span-4">
+    <button class="px-4 py-2 bg-orange-500 text-green-950 font-semibold rounded hover:bg-orange-600 transition">
+      Télécharger l’application
+    </button>
+  </li>
+</ul>
+
+
+      </div>
+    </div>
+
+    <nav class="col-span-12 md:col-span-6 text-right hidden md:block">
+      <ul class="inline-block space-x-6">
+        <li class="inline"><a href="index.html" class="nav-link text-white  hover:text-orange-400">Accueil</a></li>
+        <li class="inline"><a href="propos.html" class="nav-link text-white  hover:text-orange-400">À propos</a></li>
+        <li class="inline"><a href="contact.html" class="nav-link text-white hover:text-orange-400">Contact</a></li>
+              <li class="inline"><a href="forfaits.html" class="nav-link text-orange-400 font-semibold">Forfaits</a></li>
+      </ul>
+    </nav>
+  </div>
+
+</header>
+
+
 
 
   <section class="py-20 bg-green-50 mx-auto max-w-screen-xl min-w-[500px]">
     <div class=" px-6 text-center">
-      <h2 class="text-4xl font-bold text-orange-500 mb-6">Nos Forfaits Aventure & Découverte</h2>
+      <h2 class="text-4xl font-bold text-green-900 mb-6">Nos Forfaits Aventure & Découverte</h2>
       <p class="text-lg text-gray-600 mb-12">
         Découvrez nos circuits combinant camping, visites de palais historiques et exploration des plus beaux sites du Québec et du Canada.
       </p>
@@ -104,7 +142,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
 
   <footer class="bg-green-950 text-gray-400 py-10 mt-12  mx-auto max-w-screen-xl min-w-[500px]">
   <div class="container mx-auto px-8 grid grid-cols-1 xl:grid-cols-12 gap-8 text-center xl:text-left">
