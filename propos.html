@@ -16,24 +16,59 @@
 </head>
 
 <body class="page">
-  <header class="grid grid-cols-12 items-center px-8 py-4 header bg-green-950">
+<header class="bg-green-950 px-8 py-4 relative  mx-auto max-w-screen-xl min-w-[500px] ">
+  <div class=" mx-auto grid grid-cols-12 items-center">
+  
+    <div class="col-span-6 text-2xl font-bold text-white">
+    
+         <a href="index.html" class="flex items-center gap-1 text hover:text-orange-400" aria-label="Accueil"
+        title="Retour à l'accueil">
+       ⛺ <span>  Circuits d’aventure Québec</span>
+      </a>
+    </div>
 
-  <div class="col-span-6 text-2xl font-bold">
-    Circuits d’aventure Québec
+
+    <div class="col-span-6 text-right md:hidden relative">
+      <input type="checkbox" id="menu-toggle" class="peer hidden">
+      <label for="menu-toggle" class="cursor-pointer text-white text-3xl select-none z-20">
+        &#9776;
+      </label>
+
+  
+      <div class="absolute right-0 mt-2 w-48 bg-green-950 border border-green-800 rounded-md
+                  opacity-0 invisible peer-checked:opacity-100 peer-checked:visible
+                  transition-opacity duration-300 z-10">
+                  
+        <ul class="flex flex-col text-right p-4 space-y-2">
+          <li><a href="index.html" class="nav-link ">Accueil</a></li>
+          <li><a href="propos.html" class="nav-link">À propos</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+               <li><a href="forfaits.html" class="nav-link text-white hover:text-orange-400">Forfaits</a></li>
+          <li>
+           <button   class="px-4 py-2 bg-orange-500 text-green-950 font-semibold rounded hover:bg-orange-600 transition">
+  Télécharger l’application
+</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <nav class="col-span-12 md:col-span-6 text-right hidden md:block">
+      <ul class="inline-block space-x-6">
+        <li class="inline"><a href="index.html" class="nav-link  text-white  hover:text-orange-400">Accueil</a></li>
+        <li class="inline"><a href="propos.html" class="nav-link text-orange-400 font-semibold">À propos</a></li>
+        <li class="inline"><a href="contact.html" class="nav-link text-white hover:text-orange-400">Contact</a></li>
+              <li class="inline"><a href="forfaits.html" class="nav-link text-white hover:text-orange-400">Forfaits</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="col-span-6">
-    <ul class="flex justify-end space-x-6 ">
-      <li><a href="index.html" class="nav-link">Accueil</a></li>
-      <li><a href="propos.html" class="nav-link font-semibold">À propos</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-  </nav>
+
 </header>
     <main>
 
 
-      <section class="hero relative h-[80vh] grid grid-cols-12"
-         style="background-image: url('img/gens.jpg'); background-size: cover; background-position: center;">
+<section class="hero relative h-[80vh] grid grid-cols-12  mx-auto max-w-screen-xl min-w-[500px] bg-[url('img/gens.jpg')] bg-cover bg-center"
+>
 
   <div class="absolute inset-0"></div>
 
@@ -52,10 +87,10 @@
 
 
 
-<section class=" py-16 bg-green-50">
-  <div class="max-w-6xl mx-auto px-6">
+<section class=" py-16 bg-green-50 mx-auto max-w-screen-xl min-w-[500px]">
+  <div class="px-6">
 
-    <h2 class="text-3xl font-bold text-center mb-12 text-orange-400">
+    <h2 class="text-4xl  text-center font-extrabold mb-12 text-green-800 md:text-5xl">
       Pourquoi nous choisir ?
     </h2>
 
@@ -107,9 +142,9 @@
 
 
 
-<section class="py-20 bg-green-100">
+<section class="py-20 bg-green-100 mx-auto max-w-screen-xl min-w-[500px]">
 
-  <div class="max-w-4xl mx-auto px-4 text-center">
+  <div class=" text-center">
     <h2 class="text-4xl md:text-5xl font-extrabold text-green-800 tracking-tight">
       Nos Aventures en Images
     </h2>
@@ -119,7 +154,7 @@
   </div>
 
 
-  <div class="mt-12 grid grid-cols-12 gap-4 max-w-6xl mx-auto px-4">
+  <div class="mt-12 grid grid-cols-12 gap-4  px-4">
     
  
     <div class="col-span-12 sm:col-span-6 md:col-span-4">
@@ -184,8 +219,8 @@
   </div>
 </section>
 
-<section class=" py-16">
-  <div class="max-w-6xl mx-auto px-6">
+<section class=" py-16 bg-green-900 mx-auto max-w-screen-xl min-w-[500px]">
+  <div class="  px-6">
   
     <h2 class="text-3xl font-bold text-center mb-12 text-orange-400">
       Depuis nos débuts
@@ -230,16 +265,16 @@
 
 
 
-    <section class="py-20 bg-green-50" id="faq">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-12 text-orange-400">Questions Fréquentes</h2>
+    <section class="py-20 bg-green-50 mx-auto max-w-screen-xl min-w-[500px]" id="faq">
+  <div class=" px-4">
+    <h2 class="text-3xl font-bold text-center mb-12 text-green-800">Questions Fréquentes</h2>
 
     <div class="grid grid-cols-12 gap-4">
   
       <details class="col-span-12 md:col-span-6 bg-white rounded-lg shadow p-6 group">
         <summary class="cursor-pointer flex justify-between items-center font-semibold text-lg text-green-700">
           Quels types de circuits proposez-vous ?
-          <span class="transition-transform duration-300 group-open:rotate-180 text-green-600">▼</span>
+          <span class="transition-transform duration-300 group-open:rotate-180 text-green-800">▼</span>
         </summary>
         <p class="mt-2 text-gray-700">Randonnée, kayak, vélo, raquette, séjours multi-activités au Québec.</p>
       </details>
@@ -247,7 +282,7 @@
       <details class="col-span-12 md:col-span-6 bg-white rounded-lg shadow p-6 group">
         <summary class="cursor-pointer flex justify-between items-center font-semibold text-lg text-green-700">
           Faut-il avoir une expérience ?
-          <span class="transition-transform duration-300 group-open:rotate-180 text-green-600">▼</span>
+          <span class="transition-transform duration-300 group-open:rotate-180 text-green-800">▼</span>
         </summary>
         <p class="mt-2 text-gray-700">Pas nécessaire, tous niveaux bienvenus.</p>
       </details>
@@ -256,7 +291,7 @@
       <details class="col-span-12 md:col-span-6 bg-white rounded-lg shadow p-6 group">
         <summary class="cursor-pointer flex justify-between items-center font-semibold text-lg text-green-700">
           Quels sont les tarifs ?
-          <span class="transition-transform duration-300 group-open:rotate-180 text-green-600">▼</span>
+          <span class="transition-transform duration-300 group-open:rotate-180 text-green-800">▼</span>
         </summary>
         <p class="mt-2 text-gray-700">Varient selon la durée et le type de circuit.</p>
       </details>
@@ -264,7 +299,7 @@
       <details class="col-span-12 md:col-span-6 bg-white rounded-lg shadow p-6 group">
         <summary class="cursor-pointer flex justify-between items-center font-semibold text-lg text-green-700">
           Meilleure période pour voyager ?
-          <span class="transition-transform duration-300 group-open:rotate-180 text-green-600">▼</span>
+          <span class="transition-transform duration-300 group-open:rotate-180 text-green-800">▼</span>
         </summary>
         <p class="mt-2 text-gray-700">Été pour randonnée, kayak et vélo ; hiver pour raquette et ski de fond.</p>
       </details>
@@ -272,7 +307,7 @@
       <details class="col-span-12 md:col-span-6 bg-white rounded-lg shadow p-6 group">
         <summary class="cursor-pointer flex justify-between items-center font-semibold text-lg text-green-700">
           Comment réserver un circuit ?
-          <span class="transition-transform duration-300 group-open:rotate-180 text-green-600">▼</span>
+          <span class="transition-transform duration-300 group-open:rotate-180 text-green-800">▼</span>
         </summary>
         <p class="mt-2 text-gray-700">Réservez via le site web ou contactez-nous par téléphone/email.</p>
       </details>
@@ -280,7 +315,7 @@
       <details class="col-span-12 md:col-span-6 bg-white rounded-lg shadow p-6 group">
         <summary class="cursor-pointer flex justify-between items-center font-semibold text-lg text-green-700">
           Le transport est-il inclus ?
-          <span class="transition-transform duration-300 group-open:rotate-180 text-green-600">▼</span>
+          <span class="transition-transform duration-300 group-open:rotate-180 text-green-800">▼</span>
         </summary>
         <p class="mt-2 text-gray-700">Certains circuits incluent le transport depuis Montréal ou Québec.</p>
       </details>
