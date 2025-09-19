@@ -13,33 +13,69 @@
 </head>
 
 <body class="page">
-  <header class="grid grid-cols-12 items-center px-8 py-4 header bg-green-950 mx-auto max-w-screen-xl min-w-[500px]">
+ 
+<header class="bg-green-950 px-8 py-4 relative  mx-auto max-w-screen-xl min-w-[500px] ">
+  <div class=" mx-auto grid grid-cols-12 items-center">
+  
+    <div class="col-span-6 text-2xl font-bold text-white">
+    
+         <a href="index.html" class="flex items-center gap-1 text hover:text-orange-400" aria-label="Accueil"
+        title="Retour à l'accueil">
+       ⛺ <span>  Circuits d’aventure Québec</span>
+      </a>
+    </div>
 
-  <div class="col-span-6 text-2xl font-bold">
-    Circuits d’aventure Québec
+
+    <div class="col-span-6 text-right md:hidden relative">
+      <input type="checkbox" id="menu-toggle" class="peer hidden">
+      <label for="menu-toggle" class="cursor-pointer text-white text-3xl select-none z-20">
+        &#9776;
+      </label>
+
+  
+      <div class="absolute right-0 mt-2 w-48 bg-green-950 border border-green-800 rounded-md
+                  opacity-0 invisible peer-checked:opacity-100 peer-checked:visible
+                  transition-opacity duration-300 z-10">
+   <ul class="grid grid-cols-1 md:grid-cols-12 gap-4 text-right p-4">
+  <li class="md:col-span-2"><a href="index.html" class="nav-link hover:text-orange-400">Accueil</a></li>
+  <li class="md:col-span-2"><a href="propos.html" class="nav-link hover:text-orange-400">À propos</a></li>
+  <li class="md:col-span-2"><a href="contact.html" class="nav-link hover:text-orange-400">Contact</a></li>
+  <li class="md:col-span-2">
+    <a href="forfaits.html" class="nav-link text-white hover:text-orange-400">Forfaits</a>
+  </li>
+  <li class="md:col-span-4">
+    <button class="px-4 py-2 bg-orange-500 text-green-950 font-semibold rounded hover:bg-orange-600 transition">
+      Télécharger l’application
+    </button>
+  </li>
+</ul>
+
+
+      </div>
+    </div>
+
+    <nav class="col-span-12 md:col-span-6 text-right hidden md:block">
+      <ul class="inline-block space-x-6">
+        <li class="inline"><a href="index.html" class="nav-link text-white hover:text-orange-400 ">Accueil</a></li>
+        <li class="inline"><a href="propos.html" class="nav-link text-white  hover:text-orange-400">À propos</a></li>
+        <li class="inline"><a href="contact.html" class="nav-link   text-orange-400 font-semibold">Contact</a></li>
+              <li class="inline"><a href="forfaits.html" class="nav-link text-white hover:text-orange-400">Forfaits</a></li>
+      </ul>
+    </nav>
   </div>
 
-
-  <nav class="col-span-6">
-    <ul class="flex justify-end space-x-6 ">
-      <li><a href="index.html" class="nav-link">Accueil</a></li>
-      <li><a href="propos.html" class="nav-link">À propos</a></li>
-      <li><a href="contact.html" class="nav-link font-semibold ">Contact</a></li>
-    </ul>
-  </nav>
 </header>
-
     <main>
 
-<section class="hero relative h-[70vh] grid grid-cols-12 bg-cover bg-center bg-no-repeat mx-auto max-w-screen-xl min-w-[500px]" 
-         style="background-image: url('img/contact2.jpg');">
+<section class=" relative h-[70vh] grid grid-cols-12  bg-no-repeat mx-auto max-w-screen-xl min-w-[500px]  bg-[url('img/contact2.jpg')] bg-cover bg-center" 
+       >
 
   <div class="hero__content col-span-6 col-start-4 text-center text-white self-center p-6 rounded-lg">
-    <h3 class="text-lg uppercase tracking-widest">Contactez-nous</h3>
+    <h3 class="text-lg uppercase tracking-widest font-bold">Contactez-nous</h3>
     <h1 class="text-4xl md:text-6xl font-bold my-4 animate-fade-up text-orange-400">
       Restons en contact
     </h1>
-    <p class="max-w-xl mx-auto">
+    <p class="max-w-xl mx-auto font-semibold">
       Une question, un projet ou l’envie d’en savoir plus sur nos circuits ?  
       Notre équipe est là pour vous répondre rapidement.
     </p>
@@ -86,112 +122,116 @@
 </section>
  
 <section class="py-16 bg-green-900 mx-auto max-w-screen-xl min-w-[500px]">
-  <div class=" px-6 lg:px-20">
+  <div class="px-6 lg:px-20">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-
       <div>
-         <h2 class="text-3xl text-orange-400 font-bold text-center mb-4">Contactez-nous</h2>
-    <p class="text-white text-center font-bold mb-12">
-      Pour toute question ou réservation concernant notre agence de camping & voyages, remplissez le formulaire ci-dessous.
-    </p>
+        <h2 class="text-3xl text-orange-400 font-bold text-center mb-4">Contactez-nous</h2>
+        <p class="text-white text-center font-bold mb-12">
+          Pour toute question ou réservation concernant notre agence de camping & voyages, remplissez le formulaire ci-dessous.
+        </p>
 
+        <div id="success-message" class="hidden text-green-100 mt-4 font-extrabold ">
+          Votre message a été envoyé avec succès. Merci de nous avoir contactés !
+        </div>
 
+        <form action="" method="POST" id="contactForm"
+              class="grid grid-cols-12 gap-6 bg-green-200 text-green-950 p-8 rounded-xl shadow-lg" novalidate>
 
-<div id="error-messages" class="hidden col-span-12 bg-red-100 text-red-700 p-4 rounded-lg mb-4"></div>
-<div id="success-message" class="hidden text-green-600 mt-4">
-  Votre message a été envoyé avec succès. Merci de nous avoir contactés !
-</div>
-<form action="" method="POST"   id="contactForm" class="grid grid-cols-12 gap-6 bg-green-200 text-green-950  p-8 rounded-xl shadow-lg" novalidate>
+          <!-- Nom -->
+          <div class="col-span-12 md:col-span-6">
+            <label for="nom" class="mb-2 text-base font-semibold">
+              Nom <span class="text-red-700">*</span>
+            </label>
+            <input type="text" id="nom" name="nom" required
+                   class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <span class="text-red-700 text-base  hidden" id="error-nom"></span>
+          </div>
 
-  <div class="col-span-12 md:col-span-6">
-    <label for="nom" class="mb-2 text-base font-semibold">
-      Nom <span class="text-red-500">*</span>
-    </label>
-    <input type="text" id="nom" name="nom" required
-           class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-  </div>
+          <!-- Prénom -->
+          <div class="col-span-12 md:col-span-6">
+            <label for="prenom" class="mb-2 text-base font-semibold">
+              Prénom <span class="text-red-800">*</span>
+            </label>
+            <input type="text" id="prenom" name="prenom" required
+                   class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <span class="text-red-700 text-base hidden" id="error-prenom"></span>
+          </div>
 
- 
-  <div class="col-span-12 md:col-span-6">
-    <label for="prenom" class="mb-2 text-base font-semibold">
-      Prénom <span class="text-red-500">*</span>
-    </label>
-    <input type="text" id="prenom" name="prenom" required
-           class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-  </div>
+          <!-- Email -->
+          <div class="col-span-12 md:col-span-6">
+            <label for="email" class="mb-2 text-base font-semibold">
+              Email <span class="text-red-800">*</span>
+            </label>
+            <input type="email" id="email" name="email" required
+                   class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <span class="text-red-700 text-base hidden" id="error-email"></span>
+          </div>
 
+          <!-- Téléphone -->
+          <div class="col-span-12 md:col-span-6">
+            <label for="telephone" class="mb-2 text-base font-semibold">
+              Téléphone <span class="text-red-800">*</span>
+            </label>
+            <input type="tel" id="telephone" name="telephone" required
+                   class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <span class="text-red-700 text-base hidden" id="error-telephone"></span>
+          </div>
 
-  <div class="col-span-12 md:col-span-6">
-    <label for="email" class="mb-2 text-base font-semibold">
-      Email <span class="text-red-500">*</span>
-    </label>
-    <input type="email" id="email" name="email" required
-           class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-  </div>
+          <!-- Code postal -->
+          <div class="col-span-12 md:col-span-4">
+            <label for="code_postal" class="mb-2 text-base font-semibold">
+              Code postal <span class="text-red-800">*</span>
+            </label>
+            <input type="text" id="code_postal" name="code_postal" required
+                   class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <span class="text-red-700 text-base hidden" id="error-code_postal"></span>
+          </div>
 
- 
-  <div class="col-span-12 md:col-span-6">
-    <label for="telephone" class="mb-2 text-base font-semibold">
-      Téléphone <span class="text-red-500">*</span>
-    </label>
-    <input type="tel" id="telephone" name="telephone" required
-           class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-  </div>
+          <!-- Adresse -->
+          <div class="col-span-12 md:col-span-8">
+            <label for="adresse" class="mb-2 text-base font-semibold">
+              Adresse <span class="text-red-800">*</span>
+            </label>
+            <input type="text" id="adresse" name="adresse" required
+                   class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <span class="text-red-700 text-base hidden" id="error-adresse"></span>
+          </div>
 
- 
-  <div class="col-span-12 md:col-span-4">
-    <label for="code_postal" class="mb-2 text-base font-semibold">
-      Code postal <span class="text-red-500">*</span>
-    </label>
-    <input type="text" id="code_postal" name="code_postal" required
-           class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-  </div>
+          <!-- Sujet -->
+          <div class="col-span-12">
+            <label for="sujet" class="mb-2 text-base font-semibold">
+              Sujet <span class="text-red-800">*</span>
+            </label>
+            <input type="text" id="sujet" name="sujet" required
+                   class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <span class="text-red-700 text-base hidden" id="error-sujet"></span>
+          </div>
 
- 
-  <div class="col-span-12 md:col-span-8">
-    <label for="adresse" class="mb-2 text-base font-semibold">
-      Adresse <span class="text-red-500">*</span>
-    </label>
-    <input type="text" id="adresse" name="adresse" required
-           class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-  </div>
+          <!-- Message -->
+          <div class="col-span-12">
+            <label for="message" class="mb-2 text-base font-semibold">
+              Message <span class="text-red-800">*</span>
+            </label>
+            <textarea id="message" name="message" rows="5" required
+                      class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+            <span class="text-red-700 text-base hidden" id="error-message"></span>
+          </div>
 
- 
-  <div class="col-span-12">
-    <label for="sujet" class="mb-2 text-base font-semibold">
-      Sujet <span class="text-red-500">*</span>
-    </label>
-    <input type="text" id="sujet" name="sujet" required
-           class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-  </div>
-
-
-  <div class="col-span-12">
-    <label for="message" class="mb-2 text-base font-semibold">
-      Message <span class="text-red-500">*</span>
-    </label>
-    <textarea id="message" name="message" rows="5" required
-              class="p-3 rounded-md bg-green-100 text-black w-full focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
-  </div>
-
-
-  <div class="col-span-12 text-center">
-    <button type="submit" 
-            class="px-6 py-3 bg-green-800 text-white font-bold rounded-full hover:bg-orange-600 transition">
-      Envoyer le message
-    </button>
-  </div>
-</form>
-
-
-
+      
+          <div class="col-span-12 text-center">
+            <button type="submit"
+                    class="px-6 py-3 bg-green-800 text-white font-bold rounded-full hover:bg-orange-600 transition">
+              Envoyer le message
+            </button>
+          </div>
+        </form>
       </div>
 
-
+      <!-- Carte Google Maps -->
       <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.878254456334!2d-73.567256!3d45.501688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a5478c9d1b1%3A0x19cfa9a316bed36!2sMontr%C3%A9al%2C%20QC!5e0!3m2!1sfr!2sca!4v1692713790000!5m2!1sfr!2sca" 
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.878254456334!2d-73.567256!3d45.501688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a5478c9d1b1%3A0x19cfa9a316bed36!2sMontr%C3%A9al%2C%20QC!5e0!3m2!1sfr!2sca!4v1692713790000!5m2!1sfr!2sca"
           width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
       </div>
@@ -199,7 +239,8 @@
   </div>
 </section>
 
-<section class="py-16 bg-green-100 mx-auto max-w-screen-xl min-w-[500px]"">
+
+<section class="py-16 bg-green-100 mx-auto max-w-screen-xl min-w-[500px]">
   <h2 class="  text-center text-4xl  md:text-5xl font-extrabold text-green-800 gap-4 p-6">Témoignages</h2>
 
   <div class=" px-4 grid grid-cols-12 gap-8">
