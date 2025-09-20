@@ -167,18 +167,24 @@
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
-  background-color: #f97316;
+  background-color: #C2410C;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 900;
   text-decoration: none;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 .btn:hover {
-  background-color: #ea580c;
+  background-color: #9A3412;
   transform: translateY(-2px);
 }
 .btn:active {
   transform: translateY(0);
+}
+.btn:disabled {
+  background-color: #D1D5DB;
+  color: #374151;
+  cursor: not-allowed;
+  opacity: 0.8;
 }
 
 .header {
