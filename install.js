@@ -1,31 +1,26 @@
 // install.js
 
 let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  // Empêche l’affichage automatique
+  e.preventDefault();
+  deferredPrompt = e;
+
+  // Affiche ton bouton "Installer"
   const installBtn = document.getElementById("installBtn");
-  const iosMessage = document.getElementById("iosMessage");
-
-  // Détection iOS + Safari
-  const isIos = /iphone|ipad|ipod/i.test(window.navigator.userAgent);
-  const isInStandaloneMode = ("standalone" in window.navigator) && window.navigator.standalone;
-
-  if (isIos && !isInStandaloneMode) {
-    // Afficher l’aide spécifique pour iOS
-    iosMessage.style.display = "block";
-  }
-
- 
-  window.addEventListener("beforeinstallprompt", (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-  
-    installBtn.style.display = "inline-block";
-  });
+  installBtn.style.display = "block";
 
   installBtn.addEventListener("click", async () => {
-    if (!deferredPrompt) return;
-    deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
-    console.log(`Choix utilisateur : ${outcome}`);
-    deferredPrompt = null;
     installBtn.style.display = "none";
+
+    // Affiche la bannière manuellement
+    deferredPrompt.prompt();
+
+    // Attend la réponse de l’utilisateur
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log(`Résultat de l’installation : ${outcome}`);
+
+    deferredPrompt = null;
   });
+});
