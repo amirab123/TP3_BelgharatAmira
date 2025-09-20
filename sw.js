@@ -52,10 +52,10 @@ self.addEventListener('fetch', e => {
       return fetch(e.request)
         .then(networkRes => {
           if (!networkRes || networkRes.status !== 200 || networkRes.type !== 'basic') {
-            return networkRes; // réponse non-cacheable
+            return networkRes; 
           }
 
-          // On clone pour le cache
+      
      const responseClone = networkRes.clone();
 return caches.open(CACHE_NAME)
   .then(cache => cache.put(e.request, responseClone))
@@ -63,7 +63,7 @@ return caches.open(CACHE_NAME)
   
         })
         .catch(() => {
-          // Fallback pour documents HTML
+      
           if (e.request.destination === 'document') {
             return caches.match('/TP3_index.html');
           }
