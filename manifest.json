@@ -24,5 +24,25 @@
       "sizes": "512x512",
       "type": "image/png"
     }
+  ] ,
+
+
+
+  "screenshots": [
+    {
+      "src": "img/acceuil.png",
+      "sizes": "1606x788",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Écran d’accueil avec la liste principale"
+    },
+    {
+      "src": "img/detail.png",
+      "sizes": "654x612",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Vue détaillée d’un menu mobile"
+    }
   ]
+
 }
