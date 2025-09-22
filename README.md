@@ -35,11 +35,11 @@ Ce projet a pour objectif de créer un **site web interactif** pour une agence d
   -  La section FAQ est inspirée du composant "FAQ Accordion" par Kali Design (TailwindFlex) → (https://tailwindflex.com/@kali-design/faq-accordion-component)
 - **contact.html**
   - Formulaire de contact
- - Carte interactive (Google Maps intégrée)
-- Coordonnées des agences (adresses, téléphone, courriel)
+  - Carte interactive (Google Maps intégrée)
+  - Coordonnées des agences (adresses, téléphone, courriel)
 
   - **forfaits.html**
-  - section Nos Forfaits Aventure & Découverte
+    - section Nos Forfaits Aventure & Découverte
 
 ---
 Équipe  
