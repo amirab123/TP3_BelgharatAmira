@@ -34,9 +34,11 @@ Ce projet a pour objectif de créer un **site web interactif** pour une agence d
   - Galerie photo interactive inspirée de [Material Tailwind Gallery](https://www.material-tailwind.com/docs/v3/html/gallery)
   -  La section FAQ est inspirée du composant "FAQ Accordion" par Kali Design (TailwindFlex) → (https://tailwindflex.com/@kali-design/faq-accordion-component)
 - **contact.html**
-  - Formulaire de contact
-  - Carte interactive (Google Maps intégrée)
-  - Coordonnées des agences (adresses, téléphone, courriel)
+
+   - Formulaire de contact
+   - Carte interactive (Google Maps intégrée)
+   - Coordonnées des agences (adresses, téléphone, courriel)
+   - Témoignages  inspirée de  (https://tailwindflex.com/@brandon/user-product-review-card)
 
   - **forfaits.html**
     - section Nos Forfaits Aventure & Découverte
