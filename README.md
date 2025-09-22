@@ -26,7 +26,6 @@ Ce projet a pour objectif de créer un **site web interactif** pour une agence d
 ## 📄 Pages disponibles
 - **index.html**
   - Section **Destinations** (cartes inspirées de [Tailwind Elements Cards](https://tw-elements.com/docs/standard/components/cards/))
-  - Section **Témoignages**
   - Composant **Card Flowbite** → [Documentation Flowbite Card](https://flowbite.com/docs/components/card/)
 
 - **propos.html**
