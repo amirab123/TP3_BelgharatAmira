@@ -67,10 +67,10 @@
 </header>
     <main>
 
-<section class=" relative h-[70vh] grid grid-cols-12  bg-no-repeat mx-auto max-w-screen-xl min-w-[500px]  bg-[url('img/contact2.jpg')] bg-cover bg-center" 
+<section class=" relative h-[80vh] grid grid-cols-12  bg-no-repeat bg-[url('img/contact2.jpg')] bg-cover bg-center  mx-auto max-w-screen-xl min-w-[500px] " 
        >
 
-  <div class="hero__content col-span-6 col-start-4 text-center text-white self-center p-6 rounded-lg">
+  <div class=" col-span-6 col-start-4 text-center text-white self-center p-6 rounded-lg">
     <h3 class="text-lg uppercase tracking-widest font-bold">Contactez-nous</h3>
     <h1 class="text-4xl md:text-6xl font-bold my-4 animate-fade-up text-orange-400">
       Restons en contact
@@ -123,9 +123,9 @@
  
 <section class="py-16 bg-green-900 mx-auto max-w-screen-xl min-w-[500px]">
   <div class="px-6 lg:px-20">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div class="grid grid-cols-12 gap-12 items-center">
 
-      <div>
+      <div class="col-span-12 lg:col-span-7">
         <h2 class="text-3xl text-orange-400 font-bold text-center mb-4">Contactez-nous</h2>
         <p class="text-white text-center font-bold mb-12">
           Pour toute question ou réservation concernant notre agence de camping & voyages, remplissez le formulaire ci-dessous.
@@ -135,10 +135,12 @@
           Votre message a été envoyé avec succès. Merci de nous avoir contactés !
         </div>
 
-        <form action="" method="POST" id="contactForm"
-              class="grid grid-cols-12 gap-6 bg-green-200 text-green-950 p-8 rounded-xl shadow-lg" novalidate>
+        <form  method="POST" 
+        id="contactForm"
+              class="grid grid-cols-12 gap-6 bg-green-200 text-green-950 p-8 rounded-xl shadow-lg"
+               novalidate >
 
-          <!-- Nom -->
+         
           <div class="col-span-12 md:col-span-6">
             <label for="nom" class="mb-2 text-base font-semibold">
               Nom <span class="text-red-700">*</span>
@@ -228,16 +230,21 @@
         </form>
       </div>
 
-      <!-- Carte Google Maps -->
-      <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+   
+      <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg col-span-12 lg:col-span-5">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.878254456334!2d-73.567256!3d45.501688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a5478c9d1b1%3A0x19cfa9a316bed36!2sMontr%C3%A9al%2C%20QC!5e0!3m2!1sfr!2sca!4v1692713790000!5m2!1sfr!2sca"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
+      class="w-full h-full"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.878254456334!2d-73.567256!3d45.501688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a5478c9d1b1%3A0x19cfa9a316bed36!2sMontr%C3%A9al%2C%20QC!5e0!3m2!1sfr!2sca!4v1692713790000!5m2!1sfr!2sca"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
       </div>
     </div>
   </div>
 </section>
+
 
 
 <section class="py-16 bg-green-100 mx-auto max-w-screen-xl min-w-[500px]">
@@ -392,9 +399,9 @@
   </div>
 </section>
 
-
+</main>
   <footer class="bg-green-950 text-gray-400 py-10 mt-12  mx-auto max-w-screen-xl min-w-[500px]">
-  <div class="container mx-auto px-8 grid grid-cols-1 xl:grid-cols-12 gap-8 text-center xl:text-left">
+  <div class="px-8 grid grid-cols-1 xl:grid-cols-12 gap-8 text-center xl:text-left">
 
  
     <div class="xl:col-span-4">
