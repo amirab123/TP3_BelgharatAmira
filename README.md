@@ -42,13 +42,13 @@ Ce projet a pour objectif de créer un **site web interactif** pour une agence d
     - section Nos Forfaits Aventure & Découverte
 
 ---
-Équipe  
+##Équipe  
 
 Belgharat Amira
 ---
-  Lien vers votre dépôt distant : https://github.com/amirab123/TP3_BelgharatAmira.git
+  ## Lien vers votre dépôt distant : https://github.com/amirab123/TP3_BelgharatAmira.git
 ---
-Licence
+##Licence
 Projet réalisé dans le cadre du Cégep de Trois-Rivières — 2025.
 Tous droits réservés.
 
